@@ -15,13 +15,13 @@ It is built with **Next.js, TypeScript, and SerpApi** and currently compares fou
 
 ## Live proof surfaces
 
-- Demo: https://arabic-search-context-lab-1yn1.onrender.com
-- Proof index: https://arabic-search-context-lab-1yn1.onrender.com/proof
-- Arabic technical guide: https://arabic-search-context-lab-1yn1.onrender.com/guide
-- Localization sample: https://arabic-search-context-lab-1yn1.onrender.com/localization
-- Product/docs feedback: https://arabic-search-context-lab-1yn1.onrender.com/feedback
-- 30/60/90 plan: https://arabic-search-context-lab-1yn1.onrender.com/plan
-- Public source tour: https://arabic-search-context-lab-1yn1.onrender.com/source
+- Demo: https://arabic-search-context-lab-prod.onrender.com
+- Proof index: https://arabic-search-context-lab-prod.onrender.com/proof
+- Arabic technical guide: https://arabic-search-context-lab-prod.onrender.com/guide
+- Localization sample: https://arabic-search-context-lab-prod.onrender.com/localization
+- Product/docs feedback: https://arabic-search-context-lab-prod.onrender.com/feedback
+- 30/60/90 plan: https://arabic-search-context-lab-prod.onrender.com/plan
+- Public source tour: https://arabic-search-context-lab-prod.onrender.com/source
 
 **Current launch gate:** the application-facing public comparison is waiting for one controlled four-market real-snapshot capture. The application should not be submitted until those snapshots are seeded and final interaction QA passes.
 
@@ -95,6 +95,8 @@ npm run build
 - Live searches are submitted asynchronously and completed through Search Archive polling.
 
 ## Search contexts
+
+The four city-level `location` strings below were checked against SerpApi's supported Google locations list before the production capture.
 
 | Market | `location` | `gl` | `hl` |
 | --- | --- | --- | --- |
