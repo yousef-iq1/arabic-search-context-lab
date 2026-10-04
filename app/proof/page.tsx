@@ -1,0 +1,23 @@
+import Link from "next/link";
+
+const items = [
+  { title: "Public source tour", type: "Technical implementation", status: "Published", text: "A focused walkthrough of the market configuration, server-side secret boundary, async/Search Archive flow, partial-failure model, and quota-safe production design.", href: "/source" },
+  { title: "Arabic documentation localization sample", type: "Localization", status: "Published sample", text: "A parameter-level Arabic localization sample showing terminology decisions for location, country bias, Google locale, async search, caching and output formats.", href: "/localization" },
+  { title: "Arabic Search Context Lab", type: "Working product", status: "Built - snapshot seeding pending", text: "A Next.js + TypeScript demo designed to compare the same Arabic search intent across Baghdad, Riyadh, Cairo, and Casablanca using explicit localization parameters and a server-side SerpApi integration. The controlled four-market real-snapshot capture is the final public-data gate before application.", href: "/" },
+  { title: "Arabic technical tutorial", type: "Technical education", status: "Published", text: "An Arabic guide explaining location/gl/hl, server-side key handling, asynchronous search, Search Archive polling, partial failures, and quota-safe public demos.", href: "/guide" },
+  { title: "Product & documentation feedback memo", type: "Product feedback", status: "Published", text: "First-hand friction and documentation opportunities from using SerpApi as a new developer, explicitly separated from hypotheses that would need broader customer validation.", href: "/feedback" },
+  { title: "Arabic market 30/60/90 plan", type: "Market strategy", status: "Published", text: "A measured plan for localized developer education, community learning, partnerships, product feedback, and qualified adoption without treating the Arabic-speaking market as one homogeneous audience.", href: "/plan" },
+  { title: "Arabic walkthrough", type: "Speaking / video", status: "Script ready — recording pending", text: "A concise 2–3 minute technical walkthrough. The script exists; the actual recording will only be marked complete after it is recorded and published.", href: null },
+];
+
+export default function ProofPage() {
+  return (
+    <main className="shell" dir="ltr" lang="en">
+      <header className="topbar"><div><p className="eyebrow">Independent pre-application proof</p><h1>Arabic developer advocacy, demonstrated through real work.</h1><p className="lede">This proof pack makes my fit inspectable through direct product use, technical education, localization work, regional strategy, and product feedback — without claiming experience I do not have.</p></div><Link className="lang" href="/">Open demo</Link></header>
+      <section className="proofIntro"><div><span className="label">Principle</span><strong>Evidence before adjectives.</strong><p>I do not claim previous professional DevRel experience. These artifacts are a transparent attempt to show how I learn a developer product, explain it, identify friction, and think about a regional developer market.</p></div><div><span className="label">Built around</span><strong>Arabic + APIs + developer education.</strong><p>The project uses SerpApi meaningfully and keeps scope intentionally narrow so every artifact maps to work described in the Arabic Developer Advocate role.</p></div></section>
+      <section className="proofGrid">{items.map((item) => (<article className="proofCard" key={item.title}><div className="proofMeta"><span>{item.type}</span><span>{item.status}</span></div><h2>{item.title}</h2><p>{item.text}</p>{item.href ? (item.href.startsWith("/") ? (<Link href={item.href}>Open →</Link>) : (<a href={item.href} target="_blank" rel="noreferrer">Open →</a>)) : (<span className="pendingLink">Pending human recording</span>)}</article>))}</section>
+      <section className="inspector"><p className="eyebrow">What changed because I used the product</p><h2>A real search changed the architecture.</h2><p>A localized Baghdad search took roughly 33 seconds in testing. Instead of hiding that result, I changed live mode to submit asynchronously and poll by search ID. That decision is documented in the repository and tutorial.</p><p>The public version is designed around timestamped real snapshots so visitors do not consume a limited API quota. Live mode remains available server-side for controlled demonstrations.</p></section>
+      <section className="proofBoundary"><h2>Truth boundary</h2><p>This proof pack does not claim that I represent SerpApi, that SerpApi requested this work, or that planned community/event activity has already happened. Anything still pending is labeled pending.</p></section>
+    </main>
+  );
+}

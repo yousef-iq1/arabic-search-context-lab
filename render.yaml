@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: arabic-search-context-lab
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: SERPAPI_LIVE_MODE
+        value: "false"
+      - key: SERPAPI_KEY
+        sync: false
