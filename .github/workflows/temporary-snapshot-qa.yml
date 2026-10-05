@@ -1,8 +1,0 @@
-name: Snapshot QA (manual)
-on:
-  workflow_dispatch:
-jobs:
-  note:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Production snapshot QA completed successfully on 2026-10-05."
