@@ -11,26 +11,36 @@ const items = [
   { title: "Arabic walkthrough", type: "Speaking", status: "Pending", text: "A concise technical walkthrough will be published only after the real human recording is complete.", href: null },
 ];
 
+function InfoIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 10v6M12 7.2h.01" />
+    </svg>
+  );
+}
+
 export default function ProofPage() {
   return (
     <main className="shell proofMinimalShell" dir="ltr" lang="en">
-      <header className="subpageHeader">
-        <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
-        <Link className="subpageAction" href="/">Open demo</Link>
+      <header className="subpageHeader portfolioHeader">
+        <div className="subpageHeaderInner">
+          <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
+          <Link className="subpageAction compactHeaderAction" href="/">Demo</Link>
+        </div>
       </header>
 
-      <section className="proofLead">
-        <p className="proofKicker">Independent pre-application proof</p>
-        <h1>Why this proves I fit the role.</h1>
-        <p>
-          Real product use, Arabic technical content, localization judgment, product feedback,
-          and a market plan — all inspectable.
-        </p>
-        <div className="proofStats" aria-label="Proof summary">
-          <span><strong>12</strong> real snapshots</span>
-          <span><strong>Public</strong> source</span>
-          <span><strong>Arabic</strong> technical content</span>
+      <section className="proofLead proofLeadCompact">
+        <div className="proofTitleRow">
+          <h1>Proof of fit.</h1>
+          <details className="miniInfo proofTruthInfo">
+            <summary aria-label="Truth boundary" title="Truth boundary"><InfoIcon /></summary>
+            <div>
+              Independent project. No SerpApi affiliation, borrowed title, or invented community work.
+            </div>
+          </details>
         </div>
+        <p>Product. Engineering. Arabic content. Localization. Market strategy.</p>
       </section>
 
       <section className="evidenceGrid">
@@ -54,22 +64,6 @@ export default function ProofPage() {
           </article>
         ))}
       </section>
-
-      <section className="proofCallout">
-        <div>
-          <span>What changed because I used the product</span>
-          <strong>A real slow search changed the architecture.</strong>
-        </div>
-        <p>
-          Live mode moved to async submission + Search Archive polling with bounded retries
-          and per-market completion. Public mode uses real saved captures instead of spending API quota per visitor.
-        </p>
-        <Link href="/source">See the implementation →</Link>
-      </section>
-
-      <footer className="truthLine">
-        Independent project. No SerpApi affiliation, borrowed title, or invented community work.
-      </footer>
     </main>
   );
 }
