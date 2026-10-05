@@ -1,0 +1,104 @@
+{
+  "marketId": "baghdad",
+  "queryId": "ai-tools",
+  "capturedAt": "2026-10-05T04:33:41.137Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3287673d175cfa7724207",
+    "status": "Success",
+    "totalTimeTaken": 44.87,
+    "googleDomain": "google.com",
+    "locationRequested": "Baghdad,Baghdad Governorate,Iraq",
+    "locationUsed": "Baghdad,Baghdad Governorate,Iraq",
+    "hl": "ar-iq",
+    "gl": "iq",
+    "totalResults": 119,
+    "googleTimeDisplayed": 0.34
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "أفضل 10 أدوات AI للبرمجة: عدة المطور المثلى لعام 2026",
+      "link": "https://manus.im/ar/blog/best-ai-coding-assistant-tools",
+      "displayedLink": "https://manus.im › blog › best-ai-coding-assistant-tools",
+      "snippet": "مراجعة معمقة لأفضل 10 أدوات برمجة بـ AI · 1. Manus: الـ Agent المستقل الشامل · 2. Replit: بيئة التطوير المتكاملة في المتصفح المدعومة بالذكاء ...",
+      "source": "Manus AI"
+    },
+    {
+      "position": 2,
+      "title": "مساعد برمجة مستقل بالذكاء الاصطناعي ومولد أكواد | SuperNinja",
+      "link": "https://www.ninjatech.ai/ar/product/ai-code-generator",
+      "displayedLink": "https://www.ninjatech.ai › product › ai-code-generator",
+      "snippet": "ما هي أفضل أدوات الترميز بالذكاء الاصطناعي؟ أدوات ترميز الذكاء الاصطناعي الأكثر استخدامًا في عام 2026 هي SuperNinja (وكيل مستقل مع VM مخصص لكل مهمة)، و Cursor ( ...",
+      "source": "NinjaTech AI"
+    },
+    {
+      "position": 3,
+      "title": "OpenCode | وكيل برمجة بالذكاء الاصطناعي مفتوح المصدر",
+      "link": "https://opencode.ai/ar",
+      "displayedLink": "https://opencode.ai › ...",
+      "snippet": "يمنحك Zen الوصول إلى مجموعة مختارة بعناية من نماذج الذكاء الاصطناعي التي اختبرها OpenCode وقاس أداءها خصيصًا لوكلاء البرمجة. لا حاجة للقلق بشأن اختلاف الأداء ...",
+      "source": "OpenCode"
+    },
+    {
+      "position": 4,
+      "title": "أفضل ذكاء اصطناعي للبرمجة + استخدام عام بتستخدموه؟",
+      "link": "https://www.reddit.com/r/vibecoding/comments/1rqdk78/best_ai_for_programming_general_use_that_you_guys/?tl=ar",
+      "displayedLink": "أكثر من ٢٠ تعليق · قبل ٦ أشهر",
+      "snippet": "يا جماعة، أنا بحاول أفهم إيه أداة الذكاء الاصطناعي اللي تناسب وضعي أكتر، ومحتاج نصيحة ...",
+      "source": "Reddit · r/vibecoding"
+    },
+    {
+      "position": 5,
+      "title": "اختبرت كل برامج الذكاء الاصطناعي للبرمجة عشان ما تضيع وقتك. ...",
+      "link": "https://www.youtube.com/watch?v=AxMxuGm9nfk",
+      "displayedLink": "أكثر من ٣٢٫٥ ألف مشاهدة · قبل سنة واحدة",
+      "snippet": "Comments · genspark.ai منصة الذكاء الاصطناعي اللي خلّتني أصنع تطبيق في ثواني بدون كتابة كود · challenginno wstg INPVAL 1 - 4 · اول مره اعرفها ...",
+      "source": "YouTube · ‫ياسر الدبيخي‬‎"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هي أقوى أداة ذكاء اصطناعي للبرمجة؟"
+    },
+    {
+      "question": "ما هي أفضل 10 أدوات الذكاء الاصطناعي؟"
+    },
+    {
+      "question": "كيف تستخدم الذكاء الاصطناعي كمبرمج؟"
+    },
+    {
+      "question": "هل يوجد ذكاء اصطناعي بدون قيود على GitHub؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "لا تضيع فلوسك! جربت كل أدوات البرمجة بالذكاء الاصطناعي وهذا هو ...",
+      "link": "https://www.youtube.com/watch?v=6Q1axwk3gFs",
+      "platform": "YouTube",
+      "channel": "Medo Tube - ميدو تيوب"
+    },
+    {
+      "position": 2,
+      "title": "Top 5 Vibe Coding Tools… أقوى أدوات الذكاء الاصطناعي لتسريع ...",
+      "link": "https://www.facebook.com/61568751478861/posts/-top-5-vibe-coding-tools-%D8%A3%D9%82%D9%88%D9%89-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D8%AA%D8%B3%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9the_world_of_/122158502564625049/",
+      "platform": "Facebook",
+      "channel": "The World of Data"
+    },
+    {
+      "position": 3,
+      "title": "جربت 3 أدوات ذكاء صناعي تبنيلي نفس التطبيق",
+      "link": "https://www.youtube.com/watch?v=bFweeAdc02U",
+      "platform": "YouTube",
+      "channel": "اتعلم ببساطة"
+    },
+    {
+      "position": 4,
+      "title": "أفضل نماذج ذكاء اصطناعي مجانية لكتابة الأكواد البرمجية بمهارة عالية",
+      "link": "https://www.youtube.com/watch?v=E4VhNnfaC2M",
+      "platform": "YouTube",
+      "channel": "Mohammed Essam"
+    }
+  ]
+}
