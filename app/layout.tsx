@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Arabic Search Context Lab",
-  description: "Compare how the same Arabic search intent changes across local contexts using SerpApi.",
+  title: "Arabic Search Context Lab — Built with SerpApi",
+  description: "An independent SerpApi developer proof: structured search data, Arabic localization, and real four-market search-context evidence.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
