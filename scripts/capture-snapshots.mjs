@@ -12,6 +12,17 @@ const markets = [
   { id: "cairo", location: "Cairo,Cairo Governorate,Egypt", gl: "eg", hl: "ar-eg" },
   { id: "casablanca", location: "Casablanca,Casablanca-Settat,Morocco", gl: "ma", hl: "ar-ma" },
 ];
+const requestedMarketIds = (process.env.SERPAPI_CAPTURE_MARKETS ?? "")
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean);
+const selectedMarkets = requestedMarketIds.length
+  ? markets.filter((market) => requestedMarketIds.includes(market.id))
+  : markets;
+if (requestedMarketIds.length && selectedMarkets.length !== requestedMarketIds.length) {
+  console.error("[snapshot-capture] SERPAPI_CAPTURE_MARKETS includes an unknown market id");
+  process.exit(1);
+}
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 function numberOrUndefined(value) { if (value === undefined || value === null || value === "") return undefined; const n = Number(value); return Number.isFinite(n) ? n : undefined; }
 function normalize(response, market) {
@@ -25,8 +36,8 @@ async function capture(market) {
   for (let attempt = 0; attempt < 50; attempt += 1) { const status = String(response?.search_metadata?.status ?? "Processing"); if (status === "Success") return normalize(response, market); if (response?.error || !["Queued", "Processing"].includes(status)) throw new Error(`${market.id}: ${response?.error ?? status}`); await sleep(2000); response = await getJsonBySearchId(String(searchId), { api_key: apiKey }); }
   throw new Error(`${market.id}: timed out waiting for Search Archive result`);
 }
-console.log(`[snapshot-capture] starting ${markets.length} controlled real searches`);
-const settled = await Promise.allSettled(markets.map(capture)); let failures = 0;
-for (let i = 0; i < settled.length; i += 1) { const market = markets[i]; const result = settled[i]; if (result.status === "fulfilled") { console.log(`SERPAPI_SNAPSHOT_BEGIN ${market.id}`); console.log(JSON.stringify(result.value)); console.log(`SERPAPI_SNAPSHOT_END ${market.id}`); } else { failures += 1; console.error(`[snapshot-capture] ${market.id} failed: ${result.reason instanceof Error ? result.reason.message : String(result.reason)}`); } }
-console.log(`[snapshot-capture] finished: ${markets.length - failures}/${markets.length} succeeded`);
+console.log(`[snapshot-capture] starting ${selectedMarkets.length} controlled real searches: ${selectedMarkets.map((market) => market.id).join(", ")}`);
+const settled = await Promise.allSettled(selectedMarkets.map(capture)); let failures = 0;
+for (let i = 0; i < settled.length; i += 1) { const market = selectedMarkets[i]; const result = settled[i]; if (result.status === "fulfilled") { console.log(`SERPAPI_SNAPSHOT_BEGIN ${market.id}`); console.log(JSON.stringify(result.value)); console.log(`SERPAPI_SNAPSHOT_END ${market.id}`); } else { failures += 1; console.error(`[snapshot-capture] ${market.id} failed: ${result.reason instanceof Error ? result.reason.message : String(result.reason)}`); } }
+console.log(`[snapshot-capture] finished: ${selectedMarkets.length - failures}/${selectedMarkets.length} succeeded`);
 if (failures) console.warn("[snapshot-capture] partial capture; build will continue so logs can be inspected.");
