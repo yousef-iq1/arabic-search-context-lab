@@ -1,0 +1,62 @@
+{
+  "marketId": "cairo",
+  "queryId": "learn-nextjs",
+  "capturedAt": "2026-10-05T16:34:55.387Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3d176d114dfb549712f8b",
+    "status": "Success",
+    "totalTimeTaken": 55.52,
+    "googleDomain": "google.com",
+    "locationRequested": "Cairo,Cairo Governorate,Egypt",
+    "locationUsed": "Cairo,Cairo Governorate,Egypt",
+    "hl": "ar-eg",
+    "gl": "eg",
+    "totalResults": 61600,
+    "googleTimeDisplayed": 0.53
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "المستوى الثالث – الاتصال بقاعدة البيانات وتجهيز ال model وال api",
+      "link": "https://www.youtube.com/watch?v=sdmmmPsBSqk",
+      "displayedLink": "أكثر من ٩٠ مشاهدة · قبل شهر واحد",
+      "snippet": "ماذا ستتعلم في هذا الكورس؟ هذا ليس شرح Next.js عادي… هذا كورس هندسي متكامل يبني لك عقلية مطور حقيقي ‍ ✓ المستوى الأول – الأساس القوي ...",
+      "source": "YouTube · سعد السطوف - Saad Al-Sattouf"
+    },
+    {
+      "position": 2,
+      "title": "رشحولي كورس عربي كويسه next js",
+      "link": "https://www.facebook.com/groups/ElzeroWebSchool/posts/6590697647725910/",
+      "displayedLink": "أكثر من ١٠ تعليق · قبل سنتين",
+      "snippet": "اولا انصحك بالdocumentation الرسمية في موقع نيكست. وثانيا حين تبدأ التعلم انصحك بتعلم النسخة 13 لأن بينها وبين 12 تمت خلق تحديثات جدرية في ...",
+      "source": "Facebook · Elzero Web School"
+    },
+    {
+      "position": 3,
+      "title": "NEXT JS 14 بالعربي : PART 37 - Pagination",
+      "link": "https://www.youtube.com/watch?v=cESAth-teEw",
+      "displayedLink": "أكثر من ١٫٤ ألف مشاهدة · قبل سنتين",
+      "snippet": "Comments ; NEXT JS 14 بالعربي : PART 38 - Get Article With Its Comments. Youssef · views ; لو فهمت دي كويس.. هتكون AI Engineer قوي جدا · New. 10K ...",
+      "source": "YouTube · Youssef Abbas"
+    },
+    {
+      "position": 4,
+      "title": "[بالعربي ] دورة Next Auth (Auth JS) : Part 02 - Input Validation",
+      "link": "https://www.youtube.com/watch?v=gTVJ-fI9_QU",
+      "displayedLink": "أكثر من ١٫٥ ألف مشاهدة · قبل سنة واحدة",
+      "snippet": "تعلم Next Auth (Auth JS) دورة AuthJS بالعربي شرح مكتبه Next Auth دورة Next JS: ...",
+      "source": "YouTube · Youssef Abbas"
+    },
+    {
+      "position": 5,
+      "title": "إذا كنت تريد تعلّم Next.js App Router لبناء تطبيقات ويب ...",
+      "link": "https://www.instagram.com/p/Dd0W5TLF_8F/",
+      "displayedLink": "قبل أسبوع واحد",
+      "snippet": "إذا كنت تريد تعلّم Next.js App Router لبناء تطبيقات ويب احترافية بدون ضياع بين كثرة الدورات، هذا الدليل المصمم خطوة بخطوة سيمنحك مسار واضح ...",
+      "source": "Instagram · fawazalmekhlavi"
+    }
+  ],
+  "relatedQuestions": [],
+  "inlineVideos": []
+}
