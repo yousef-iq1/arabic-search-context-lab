@@ -23,7 +23,7 @@ The key is never committed or sent to the browser.
 
 The repository includes `scripts/capture-snapshots.mjs`. It is disabled by default.
 
-For a one-time trusted capture, set `SERPAPI_CAPTURE_ON_BUILD=true` alongside the private server-side `SERPAPI_KEY`. The controlled capture step submits the same curated Arabic query for Baghdad, Riyadh, Cairo, and Casablanca, waits for Search Archive completion, normalizes the responses, and prints each snapshot between explicit log markers. The API key is never printed.
+For a one-time trusted capture, set `SERPAPI_CAPTURE_ON_BUILD=true` alongside the private server-side `SERPAPI_KEY`. The controlled capture step can submit one or more curated Arabic query presets for Baghdad, Riyadh, Cairo, and Casablanca, waits for Search Archive completion, normalizes the responses, and prints each snapshot between explicit log markers. `SERPAPI_CAPTURE_QUERY_IDS` and `SERPAPI_CAPTURE_MARKETS` can narrow a trusted capture run. The API key is never printed.
 
 After the normalized log output is reviewed and committed here, return `SERPAPI_CAPTURE_ON_BUILD` to `false`.
 
