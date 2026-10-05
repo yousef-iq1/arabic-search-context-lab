@@ -20,15 +20,6 @@ type ApiPayload = {
 const POLL_INTERVAL_MS = 1800;
 const MAX_POLLS = 36;
 
-function ProofIcon() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M7 3h10a2 2 0 0 1 2 2v14H5V5a2 2 0 0 1 2-2Z" />
-      <path d="m8.5 11 2.1 2.1 4.9-5" />
-    </svg>
-  );
-}
-
 function CodeIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -190,23 +181,7 @@ export function ContextLab() {
       <header className={`siteHeader floatingHeader ${headerHidden ? "isHidden" : ""}`}>
         <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
 
-        <nav className="headerTools" aria-label={isAr ? "روابط المشروع" : "Project links"}>
-          <Link
-            className="iconButton"
-            href="/proof"
-            aria-label={isAr ? "ملف الإثبات" : "Proof pack"}
-            title={isAr ? "ملف الإثبات" : "Proof pack"}
-          >
-            <ProofIcon />
-          </Link>
-          <Link
-            className="iconButton"
-            href="/source"
-            aria-label={isAr ? "المصدر" : "Source"}
-            title={isAr ? "المصدر" : "Source"}
-          >
-            <CodeIcon />
-          </Link>
+        <nav className="headerTools" aria-label={isAr ? "إعدادات اللغة" : "Language settings"}>
           <button
             className="lang langCircle"
             onClick={() => setLocale(isAr ? "en" : "ar")}
@@ -218,23 +193,33 @@ export function ContextLab() {
         </nav>
       </header>
 
-      <section className="minimalHero">
+      <section className="minimalHero heroStage">
         <div className="minimalHeroCopy">
-          <span className="serpBadge">SerpApi</span>
           <h1>{isAr ? "نفس البحث. سياق مختلف." : "Same search. Different context."}</h1>
           <p>
             {isAr
-              ? "SerpApi تحوّل نتائج البحث إلى بيانات منظّمة للتطبيقات. هنا نقارن السياق العربي بين أربع مدن."
+              ? "SerpApi تحوّل نتائج البحث إلى بيانات منظّمة للتطبيقات. هنا نقارن نفس النية العربية بين أربع مدن."
               : "SerpApi turns search results into structured data for software. Here, the same Arabic intent is compared across four cities."}
           </p>
         </div>
 
-        <div className="contextVisual" aria-hidden="true">
-          <span>IQ</span>
-          <span>SA</span>
-          <span>EG</span>
-          <span>MA</span>
-          <i>API</i>
+        <div className="heroVisualGroup">
+          <div className="contextVisual" aria-hidden="true">
+            <span>IQ</span>
+            <span>SA</span>
+            <span>EG</span>
+            <span>MA</span>
+            <i>API</i>
+          </div>
+          <div className="heroProofLinks">
+            <Link className="roleProofCta" href="/proof">
+              {isAr ? "ليش هذا يثبت ملاءمتي للدور؟" : "Why this proves I fit the role"}
+              <span aria-hidden="true">↗</span>
+            </Link>
+            <Link className="sourceTextLink" href="/source">
+              {isAr ? "شوف كيف بنيته" : "See how it is built"}
+            </Link>
+          </div>
         </div>
       </section>
 
