@@ -1,0 +1,101 @@
+{
+  "marketId": "baghdad",
+  "queryId": "learn-nextjs",
+  "capturedAt": "2026-10-05T16:35:59.056Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3d176d23ff8f68fe1ded8",
+    "status": "Success",
+    "totalTimeTaken": 119.92,
+    "googleDomain": "google.com",
+    "locationRequested": "Baghdad,Baghdad Governorate,Iraq",
+    "locationUsed": "Baghdad,Baghdad Governorate,Iraq",
+    "hl": "ar-iq",
+    "gl": "iq",
+    "totalResults": 125,
+    "googleTimeDisplayed": 0.58
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "NEXT JS 14 بالعربي : PART 02 - Routing",
+      "link": "https://www.youtube.com/watch?v=wwqmW2gLX28",
+      "displayedLink": "أكثر من ٨٫٣ ألف مشاهدة · قبل سنتين",
+      "snippet": "NEXT JS 14 بالعربي : PART 03 - Header Component · تعلم #nextjs13 من خلال برمجة متجر الكتروني · كيف يتعامل Grid مع العناصر الزائده Implicit Row & ...",
+      "source": "YouTube · Youssef Abbas"
+    },
+    {
+      "position": 2,
+      "title": "ما هي Nextjs وآلية عملها - Rokkey",
+      "link": "https://rokkey.com/%D9%85%D8%A7-%D9%87%D9%8A-nextjs-%D9%88%D8%A2%D9%84%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87%D8%A7/",
+      "displayedLink": "https://rokkey.com › ويب › ما هي Nextjs وآلية عملها",
+      "snippet": "Next.js هو إطار عمل JavaScript تم إنشاؤه بواسطة Zeit. يتيح لك إنشاء عرض من جانب الخادم وتطبيقات ويب ثابتة باستخدام React. إنها أداة رائعة لبناء ...",
+      "source": "rokkey.com"
+    },
+    {
+      "position": 3,
+      "title": "كورس Next.js بالعربي - React Libraries",
+      "link": "https://www.reactlibraries.com/courses/next-js-blte68",
+      "displayedLink": "https://www.reactlibraries.com › Courses",
+      "snippet": "الكورس معمول مخصوص لأي حد عنده أساسيات React وعايز ياخد الخطوة الجاية ويبني تطبيقات قوية وسريعة باستخدام Next.js. محتوى الكورس: مقدمة وفهم ...",
+      "source": "reactlibraries.com"
+    },
+    {
+      "position": 4,
+      "title": "لو انا اتعلمت next.js علي طول من غير م اخش اتعلم react عادي و ...",
+      "link": "https://www.facebook.com/groups/ElzeroWebSchool/posts/7636150329847298/",
+      "displayedLink": "‫٤ تعليق · قبل سنتين",
+      "snippet": "عادي جداً لانه next هي مكمله لعيوب الReact اصلا ويلي تكتبه ب next هو component React يعني في الأخير هو هو نفسه . NestJS 10 و11 و12 🟢 Express و ...",
+      "source": "Facebook · Elzero Web School"
+    },
+    {
+      "position": 5,
+      "title": "00 introduction Next Js",
+      "link": "https://www.youtube.com/watch?v=AR4CdiTMkoo",
+      "displayedLink": "أكثر من ٥٫٢ ألف مشاهدة · قبل سنتين",
+      "snippet": "Comments ; 01 Routes NextJs || Next بالعربي. Fekra | · K views ; React.js vs Next.js: من الأفضل لبناء التطبيقات ؟ Yehia Tech يحيى · 20K views ; كورس ...",
+      "source": "YouTube · Fekra | فكره"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هو Next JS؟"
+    },
+    {
+      "question": "ما معنى React في البرمجة؟"
+    },
+    {
+      "question": "ما هو شرح React؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "Next.js بالعربي في ساعة! (تعلم النكست خلال 60 دقيقة )",
+      "link": "https://www.youtube.com/watch?v=aBILeqkAw2k",
+      "platform": "YouTube",
+      "channel": "كورسات في البرمجة - Korsat X Parmaga"
+    },
+    {
+      "position": 2,
+      "title": "كورس Next.js الكامل في فيديو واحد | من البداية حتى الاحتراف",
+      "link": "https://www.youtube.com/watch?v=r76jFwctQM8",
+      "platform": "YouTube",
+      "channel": "CodeX - بالعربي"
+    },
+    {
+      "position": 3,
+      "title": "كورس NEXT JS | شرح كامل في ساعتين | شرح نظري و تطبيق عملي",
+      "link": "https://www.youtube.com/watch?v=_t4c-vxalp4",
+      "platform": "YouTube",
+      "channel": "أكاديمية ترميز"
+    },
+    {
+      "position": 4,
+      "title": "10. Global Styles | سلسلة تعلم Next.js بالعربي",
+      "link": "https://www.youtube.com/watch?v=YS_Ilrx3PLQ",
+      "platform": "YouTube",
+      "channel": "كورسات في البرمجة - Korsat X Parmaga"
+    }
+  ]
+}
