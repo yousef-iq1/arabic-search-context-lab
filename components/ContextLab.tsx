@@ -28,6 +28,15 @@ function CodeIcon() {
   );
 }
 
+function SearchIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="6" />
+      <path d="m16 16 4 4" />
+    </svg>
+  );
+}
+
 function InfoIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -178,10 +187,9 @@ export function ContextLab() {
 
   return (
     <main dir={direction} lang={isAr ? "ar" : "en"} className="shell minimalShell">
-      <header className={`siteHeader floatingHeader ${headerHidden ? "isHidden" : ""}`}>
-        <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
-
-        <nav className="headerTools" aria-label={isAr ? "إعدادات اللغة" : "Language settings"}>
+      <header className={`siteHeader floatingHeader profileLikeHeader ${headerHidden ? "isHidden" : ""}`}>
+        <div className="headerInner">
+          <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
           <button
             className="lang langCircle"
             onClick={() => setLocale(isAr ? "en" : "ar")}
@@ -190,7 +198,7 @@ export function ContextLab() {
           >
             {isAr ? "E" : "ع"}
           </button>
-        </nav>
+        </div>
       </header>
 
       <section className="minimalHero heroStage">
@@ -201,6 +209,15 @@ export function ContextLab() {
               ? "SerpApi تحوّل نتائج البحث إلى بيانات منظّمة للتطبيقات. هنا نقارن نفس النية العربية بين أربع مدن."
               : "SerpApi turns search results into structured data for software. Here, the same Arabic intent is compared across four cities."}
           </p>
+          <div className="heroPrimaryActions">
+            <Link className="roleProofCta" href="/proof">
+              {isAr ? "ليش أنا مناسب للدور" : "Why I’m a fit"}
+              <span aria-hidden="true">↗</span>
+            </Link>
+            <Link className="sourceTextLink" href="/source">
+              {isAr ? "كيف بنيته" : "How it’s built"}
+            </Link>
+          </div>
         </div>
 
         <div className="heroVisualGroup">
@@ -211,23 +228,15 @@ export function ContextLab() {
             <span>MA</span>
             <i>API</i>
           </div>
-          <div className="heroProofLinks">
-            <Link className="roleProofCta" href="/proof">
-              {isAr ? "ليش هذا يثبت ملاءمتي للدور؟" : "Why this proves I fit the role"}
-              <span aria-hidden="true">↗</span>
-            </Link>
-            <Link className="sourceTextLink" href="/source">
-              {isAr ? "شوف كيف بنيته" : "See how it is built"}
-            </Link>
-          </div>
         </div>
       </section>
 
       <section className="controlPanel compactControl" id="lab" aria-label={isAr ? "إعداد المقارنة" : "Comparison controls"}>
         <div className="queryControl">
-          <label>
-            <span>{isAr ? "الاستعلام" : "Query"}</span>
+          <div className="querySelectShell">
+            <SearchIcon />
             <select
+              aria-label={isAr ? "اختر الاستعلام" : "Choose query"}
               value={queryId}
               onChange={(e) => setQueryId(e.target.value as QueryId)}
               disabled={loading}
@@ -238,14 +247,14 @@ export function ContextLab() {
                 </option>
               ))}
             </select>
-          </label>
+            <span className="queryChevron" aria-hidden="true">⌄</span>
+          </div>
           <button className="run compactRun" disabled={loading} onClick={runComparison}>
             {loading ? (isAr ? "نقارن…" : "Comparing…") : (isAr ? "قارن" : "Compare")}
           </button>
         </div>
 
         <div className="marketBlock">
-          <span className="label">{isAr ? "المدن" : "Cities"}</span>
           <div className="marketPicker compactMarkets">
             {MARKET_IDS.map((id) => {
               const market = MARKETS[id];
