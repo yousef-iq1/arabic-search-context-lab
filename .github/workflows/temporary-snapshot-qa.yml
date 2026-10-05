@@ -1,0 +1,43 @@
+name: Temporary snapshot QA
+on:
+  push:
+    branches: [main]
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify four-market snapshot API
+        shell: bash
+        run: |
+          set -euo pipefail
+          endpoint="https://arabic-search-context-lab-prod.onrender.com/api/compare"
+          code=$(curl -L -sS --retry 8 --retry-delay 4 --retry-all-errors --connect-timeout 30 --max-time 240 \
+            -H 'content-type: application/json' \
+            -d '{"queryId":"ai-tools","markets":["baghdad","riyadh","cairo","casablanca"]}' \
+            -o /tmp/compare.json -w "%{http_code}" "$endpoint")
+          echo "STATUS=$code"
+          test "$code" = "200"
+          python - <<'PY'
+          import json
+          data=json.load(open("/tmp/compare.json"))
+          print("STATE",data.get("state"))
+          results=data.get("results",[])
+          print("RESULTS",len(results))
+          assert data.get("state")=="complete"
+          assert len(results)==4
+          expected={"baghdad","riyadh","cairo","casablanca"}
+          assert {r.get("marketId") for r in results}==expected
+          for r in results:
+              assert r.get("mode")=="snapshot"
+              assert r.get("metadata",{}).get("status")=="Success"
+              assert len(r.get("organicResults",[]))==5
+              print(r["marketId"],r["metadata"].get("totalTimeTaken"),r["metadata"].get("hl"),r["metadata"].get("gl"))
+          assert data.get("errors")==[]
+          print("SHARED_DOMAINS",data.get("comparison",{}).get("sharedDomains"))
+          PY
+          for page in / /proof /guide /localization /feedback /plan /source; do
+            code=$(curl -L -sS --retry 5 --retry-all-errors --max-time 180 -o /tmp/page.html -w "%{http_code}" "https://arabic-search-context-lab-prod.onrender.com$page")
+            echo "PAGE $page STATUS=$code BYTES=$(wc -c < /tmp/page.html)"
+            test "$code" = "200"
+            test -s /tmp/page.html
+          done
