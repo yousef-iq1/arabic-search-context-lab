@@ -1,0 +1,104 @@
+{
+  "marketId": "cairo",
+  "queryId": "ai-tools",
+  "capturedAt": "2026-10-05T04:32:56.786Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac32876d58a7acd3857ee64",
+    "status": "Success",
+    "totalTimeTaken": 0.49,
+    "googleDomain": "google.com",
+    "locationRequested": "Cairo,Cairo Governorate,Egypt",
+    "locationUsed": "Cairo,Cairo Governorate,Egypt",
+    "hl": "ar-eg",
+    "gl": "eg",
+    "totalResults": 116,
+    "googleTimeDisplayed": 0.17
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "أفضل 10 أدوات ذكاء اصطناعي للمطورين لتعزيز كفاءة البرمجة",
+      "link": "https://clickup.com/ar/blog/108886/ai-tools-for-developers/",
+      "displayedLink": "https://clickup.com › blog › ai-tools-for-developers",
+      "snippet": "🛡️ يعمل GitHub Copilot على تعزيز تجربة البرمجة من خلال تقديم مساعدة متعددة اللغات في البرمجة والحلول التي يحركها المجتمع. وهو يتكامل بسلاسة مع ...",
+      "source": "ClickUp"
+    },
+    {
+      "position": 2,
+      "title": "إيه أحسن ذكاء اصطناعي يساعد في البرمجة؟ : r/CodingHelp",
+      "link": "https://www.reddit.com/r/CodingHelp/comments/1kgacfn/what_ai_is_best_to_help_with_coding/?tl=ar",
+      "displayedLink": "أكثر من ١٠ تعليق · قبل سنة واحدة",
+      "snippet": "بصراحة، لو لازم تروح في سكة الذكاء الاصطناعي، جرب تستخدم Gemini 2.5 pro من aistudio، نسخة شهر مارس. Gemini flash و 2.5 pro على موقع Gemini ...",
+      "source": "Reddit · r/CodingHelp"
+    },
+    {
+      "position": 3,
+      "title": "2 مليار توكن استخدمتهم في 2025 .. ايه أفضل موديل AI في البرمجة؟",
+      "link": "https://www.youtube.com/watch?v=OTcpak3G2aw",
+      "displayedLink": "أكثر من ١٣٫٤ ألف مشاهدة · قبل ٩ أشهر",
+      "snippet": "... الأدوات مثل Cursor و Augment Code فعلاً. ستكتشف لماذا نفس الموديل يعطي نتائج مختلفة تماماً في أدوات مختلفة، وما هو System Prompt وكيف يغير ...",
+      "source": "YouTube · Bashmohandes Mazen - بشمهندس مازن"
+    },
+    {
+      "position": 4,
+      "title": "أفضل أدوات برمجة بالذكاء الاصطناعي 2026 | منوال - Minwal.ai",
+      "link": "https://minwal.ai/tools/code",
+      "displayedLink": "https://minwal.ai › الأدوات",
+      "snippet": "للمبتدئين: ابدأ بـ GitHub Copilot (الأسهل). للمتقدمين: Cursor أو Windsurf (الأكثر قدرة). للمشاريع الكبيرة: تكامل الأدوات مع قاعدة الكود الكاملة. لكتابة الكود ...",
+      "source": "minwal.ai"
+    },
+    {
+      "position": 5,
+      "title": "السلام عليكم سؤال ماهو افضل برنامج ذكاء اصطناعي ساعدكم في ...",
+      "link": "https://www.facebook.com/groups/ElzeroWebSchool/posts/24469897176046016/",
+      "displayedLink": "أكثر من ١٠ تعليق · قبل سنة واحدة",
+      "snippet": "السلام عليكم سؤال ماهو افضل برنامج ذكاء اصطناعي ساعدكم في شرح الاكواد او الدراسة في مجال البرمجة طبعا deepseek, chatgpt, gemini. وشكرا · Ali ...",
+      "source": "Facebook · Elzero Web School"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هي أقوى تطبيقات الذكاء الاصطناعي؟"
+    },
+    {
+      "question": "ما هي أحدث لغة برمجة؟"
+    },
+    {
+      "question": "ما هي اللغة المستخدمة في الذكاء الاصطناعي؟"
+    },
+    {
+      "question": "كيف يمكنني تطوير تطبيق باستخدام الذكاء الاصطناعي؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "جربت 3 أدوات ذكاء صناعي تبنيلي نفس التطبيق",
+      "link": "https://www.youtube.com/watch?v=bFweeAdc02U",
+      "platform": "YouTube",
+      "channel": "اتعلم ببساطة"
+    },
+    {
+      "position": 2,
+      "title": "Top 5 Vibe Coding Tools… أقوى أدوات الذكاء الاصطناعي لتسريع ...",
+      "link": "https://www.facebook.com/61568751478861/posts/-top-5-vibe-coding-tools-%D8%A3%D9%82%D9%88%D9%89-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D8%AA%D8%B3%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9the_world_of_/122158502564625049/",
+      "platform": "Facebook",
+      "channel": "The World of Data"
+    },
+    {
+      "position": 3,
+      "title": "لا تضيع فلوسك! جربت كل أدوات البرمجة بالذكاء الاصطناعي وهذا هو ...",
+      "link": "https://www.youtube.com/watch?v=6Q1axwk3gFs",
+      "platform": "YouTube",
+      "channel": "Medo Tube - ميدو تيوب"
+    },
+    {
+      "position": 4,
+      "title": "Claude Code & MCP is Amazing | هل هو أفضل أداة ذكاء اصطناعي ...",
+      "link": "https://www.youtube.com/watch?v=wbHCWzc71Sk",
+      "platform": "YouTube",
+      "channel": "Yehia Tech يحيى تك"
+    }
+  ]
+}
