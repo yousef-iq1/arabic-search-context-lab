@@ -23,7 +23,7 @@ It is built with **Next.js, TypeScript, and SerpApi** and currently compares fou
 - 30/60/90 plan: https://arabic-search-context-lab-prod.onrender.com/plan
 - Public source tour: https://arabic-search-context-lab-prod.onrender.com/source
 
-**Current launch gate:** the application-facing public comparison is waiting for one controlled four-market real-snapshot capture. The application should not be submitted until those snapshots are seeded and final interaction QA passes.
+**Current public data state:** four real SerpApi snapshots were captured on 2026-10-05 for Baghdad, Riyadh, Cairo, and Casablanca and are committed in `data/snapshots/ai-tools/`. Production remains snapshot-first with live mode disabled.
 
 ## What it demonstrates
 
@@ -60,6 +60,8 @@ data/snapshots/<query-id>/<market-id>.json
 ```
 
 Snapshots must come from real SerpApi responses; fabricated search data is not used.
+
+The current four-market set records reported SerpApi total times of **44.87s (Baghdad)**, **81.56s (Riyadh)**, **0.49s (Cairo)**, and **203.97s (Casablanca)**. These are observations from this capture only, not general latency claims.
 
 ## Local development
 
