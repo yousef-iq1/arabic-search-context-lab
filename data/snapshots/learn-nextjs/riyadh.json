@@ -1,0 +1,91 @@
+{
+  "marketId": "riyadh",
+  "queryId": "learn-nextjs",
+  "capturedAt": "2026-10-05T16:34:00.385Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3d1769ae49129dfe124b5",
+    "status": "Success",
+    "totalTimeTaken": 0.59,
+    "googleDomain": "google.com",
+    "locationRequested": "Riyadh,Riyadh Province,Saudi Arabia",
+    "locationUsed": "Riyadh,Riyadh Province,Saudi Arabia",
+    "hl": "ar-sa",
+    "gl": "sa",
+    "totalResults": 2390000000,
+    "googleTimeDisplayed": 0.4
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "العربية | أبرز الأخبار العالمية والمحلية العاجلة",
+      "link": "https://www.alarabiya.net/",
+      "displayedLink": "https://www.alarabiya.net",
+      "snippet": "اقرأ أهم وأبرز الأخبار والتقارير عربياً وعالمياً من قناة العربية في الشأن السياسي والاقتصادي والرياضي والصحي والمزيد حصرياً عبر موقعنا الالكتروني.",
+      "source": "العربية"
+    },
+    {
+      "position": 2,
+      "title": "بالعربي نتعلم : العاب اطفال تعليمية وقصص اطفال عربية",
+      "link": "https://www.belarabyapps.com/",
+      "displayedLink": "https://www.belarabyapps.com",
+      "snippet": "امنحي طفلك وقتًا ممتعًا وآمنًا مع مئات القصص العربية المصوّرة، بدون إعلانات وبمحتوى تربوي هادف مناسب للأعمار من 3 إلى 10 سنوات. ✓ قصص جديدة أسبوعيًا ✓ شخصيات ...",
+      "source": "بالعربي نتعلم"
+    },
+    {
+      "position": 3,
+      "title": "بالعربي | الصفحة الرئيسية",
+      "link": "https://bilaraby.qa/ar",
+      "displayedLink": "https://bilaraby.qa › ...",
+      "snippet": "قدّمت قمّة \"بالعربي\" فرصة للحوار وتبادل الخبرات بين صنّاع المحتوى والخبراء والمهتمين من مختلف أنحاء العالم الناطق بالعربية. أهم اللحظات. ملتقى \"بالعربي\". ملتقى ...",
+      "source": "Bilaraby"
+    },
+    {
+      "position": 4,
+      "title": "بنك anb - الأفراد - anb",
+      "link": "https://anb.com.sa/ar/web/anb",
+      "displayedLink": "https://anb.com.sa › web › anb",
+      "snippet": "بطاقاتنا تقدم لك مجموعة واسعة من العروض والخصومات، والعديد من البرامج التي تلائم احتياجاتك وكذلك مزايا أخرى مثل خدمة المساعد الشخصي والدخول إلى صالات ...",
+      "source": "anb"
+    },
+    {
+      "position": 5,
+      "title": "بالعربي - بدر الشعيبي - فيديو كليب",
+      "link": "https://www.youtube.com/watch?v=Ew6cROAek-M",
+      "displayedLink": "أكثر من ٥٫٦ مليون مشاهدة · قبل ٦ سنوات",
+      "snippet": "Learn more · Sign in. Video unavailable. This content isn't available. أغنية #بالعربي من ألبوم - بالعربي ٢٠٢٠ تابع بدر على - Follow Bader: ...",
+      "source": "YouTube · بدر الشعيبي"
+    }
+  ],
+  "relatedQuestions": [],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "القيادي في حركة حماس غازي حمد لـ \"العربية\": دورنا السياسي والمدني ...",
+      "link": "https://www.facebook.com/AlArabiya/videos/%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D9%8A-%D9%81%D9%8A-%D8%AD%D8%B1%D9%83%D8%A9-%D8%AD%D9%85%D8%A7%D8%B3-%D8%BA%D8%A7%D8%B2%D9%8A-%D8%AD%D9%85%D8%AF-%D9%84%D9%80-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AF%D9%88%D8%B1%D9%86%D8%A7-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A-%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D8%B3%D8%AA%D9%85%D8%B1/1037171432361339/",
+      "platform": "Facebook",
+      "channel": "قناة العربية Al Arabiya"
+    },
+    {
+      "position": 2,
+      "title": "شرح كانفا Canva كامل وبالتفصيل بالعربي للمبتدئين 2026",
+      "link": "https://www.youtube.com/watch?v=WivLDi9Yxd4",
+      "platform": "YouTube",
+      "channel": "Hwthr™"
+    },
+    {
+      "position": 3,
+      "title": "كورس html كامل بالعربي | ماذا ستتعلم في هذه الدورة؟",
+      "link": "https://www.youtube.com/watch?v=Dv39fDYei9A",
+      "platform": "YouTube",
+      "channel": "Abdelrahman Gamal"
+    },
+    {
+      "position": 4,
+      "title": "شرح ال OSI Model وال 7 مراحل شرح مبسط بالعربي في 20 دقيقة فقط",
+      "link": "https://www.youtube.com/watch?v=61kRxdZ5p-o",
+      "platform": "YouTube",
+      "channel": "IT Dose"
+    }
+  ]
+}
