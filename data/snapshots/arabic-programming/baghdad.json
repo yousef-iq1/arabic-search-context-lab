@@ -1,0 +1,75 @@
+{
+  "marketId": "baghdad",
+  "queryId": "arabic-programming",
+  "capturedAt": "2026-10-05T16:34:00.355Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3d176e396eb3938fb5e20",
+    "status": "Success",
+    "totalTimeTaken": 0.53,
+    "googleDomain": "google.com",
+    "locationRequested": "Baghdad,Baghdad Governorate,Iraq",
+    "locationUsed": "Baghdad,Baghdad Governorate,Iraq",
+    "hl": "ar-iq",
+    "gl": "iq",
+    "totalResults": 98100,
+    "googleTimeDisplayed": 0.27
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "أﻓﺿل 10 ﻣﺻﺎدر ﻟﺗﻌﻠﱡم ﻟﻐﺎت اﻟﺑرﻣﺟﺔ ﺑﺎﻟﻠﻐﺔ اﻟﻌرﺑﯾّﺔ",
+      "link": "https://hadeelbakri.com/wp-content/uploads/simple-file-list/%D8%A3%D9%81%D8%B6%D9%84-10-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D9%84%D8%AA%D8%B9%D9%84%D9%8F%D9%91%D9%85-%D9%84%D8%BA%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D9%91%D8%A9.pdf",
+      "displayedLink": "https://hadeelbakri.com › uploads › simple-file-list",
+      "snippet": "ﻣﻘدﻣﺔ. ﻓﻲ. ﻋﺎﻟم. اﻟﺑرﻣﺟﺔ. ○. ﻣﻘدﻣﺔ. ﻓﻲ. ﺑرﻣﺟﺔ. ﺗطﺑﯾﻘﺎت. اﻷﻧدروﯾد. ○. ﺗﻌﻠم. اﻟﺑرﻣﺟﺔ. ﺑﻠﻐﺔ. C. ++. ○. إﻧﺷﺎء. وﺗﺻﻣﯾم. اﻟﻣواﻗﻊ. ﺑدون. ﺑرﻣﺟﺔ. ○. أﺳﺎﺳﯾﺎت. اﻟﺑرﻣﺟﺔ.",
+      "source": "هديل البكري"
+    },
+    {
+      "position": 2,
+      "title": "أفضل الكتب العربية لتعلم البرمجة",
+      "link": "https://www.sayidaty.net/node/874606/%D9%84%D8%A7%D9%8A%D9%81-%D8%B3%D8%AA%D8%A7%D9%8A%D9%84/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D9%88%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9",
+      "displayedLink": "https://www.sayidaty.net › لايف ستايل › تكنولوجيا",
+      "snippet": "وهناك مجموعة من الكتب التي تتطرَّق إلى لغة سي، ومنها كتاب \"لغة السي ببساطة\" لمؤلفه محمود البربري، الذي يُقدِّم هذه اللغة للقارئ بالطريقة الأكثر ...",
+      "source": "مجلة سيدتي"
+    },
+    {
+      "position": 3,
+      "title": "ما هي أفضل الكورسات العربية لتعلم البرمجة (مجال تطوير الويب)",
+      "link": "https://ar.quora.com/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D9%84%D9%85",
+      "displayedLink": "أكثر من ٣٠ إجابة · قبل ٣ سنوات",
+      "snippet": "استطيع ان اعطيك دورة لتصميم وبناء مواقع ومتاجر الانترنت مذىدتها اسبوع عبر الزوم بالصوت والكتابة بسعر مناسب جدا اعلمك تبدا مشوارك.",
+      "source": "Quora"
+    },
+    {
+      "position": 4,
+      "title": "كتب تعليم البرمجة",
+      "link": "https://www.facto-solutions.com/%D8%A7%D9%84%D9%85%D8%AF%D9%88%D9%86%D8%A9/%D9%83%D8%AA%D8%A8-%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/31",
+      "displayedLink": "https://www.facto-solutions.com › المدونة › كتب-تعلي...",
+      "snippet": "1- مقدمة . · 2- كتب تعليم البرمجة باللغة الإنكليزية . · 3- كتب تعليم البرمجة باللغة العربية . · 4- نصائح تعليم البرمجة من خلال الكتب . · 5- الخدمات التي تقدمها شركة ...",
+      "source": "facto-solutions.com"
+    },
+    {
+      "position": 5,
+      "title": "أفضل الكتب لتعلم البرمجة - تطوير الواجهات الأمامية",
+      "link": "https://academy.hsoub.com/questions/11718-%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%83%D8%AA%D8%A8-%D9%84%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/",
+      "displayedLink": "https://academy.hsoub.com › ... › تطوير الواجهات الأمامية",
+      "snippet": "عن تجربة شخصية لكتاب HTML and CSS: Design and Build Websites John Duckett كتاب مميز وعميق في الشرح وشبه شامل، واللغة المستخدمة خفيفة. نفس الكاتب ...",
+      "source": "أكاديمية حسوب"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هو أفضل موقع لتعلم البرمجة بالعربية مجاناً؟"
+    },
+    {
+      "question": "ما هو أفضل تطبيق لتعلم البرمجة؟"
+    },
+    {
+      "question": "كيف يمكنني تعلم البرمجة باللغة العربية؟"
+    },
+    {
+      "question": "كيف أتعلم البرمجة من الهاتف؟"
+    }
+  ],
+  "inlineVideos": []
+}
