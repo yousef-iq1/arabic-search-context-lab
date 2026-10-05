@@ -1,0 +1,97 @@
+{
+  "marketId": "cairo",
+  "queryId": "arabic-programming",
+  "capturedAt": "2026-10-05T16:34:44.864Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3d1767d1a1394ae2f8951",
+    "status": "Success",
+    "totalTimeTaken": 45.6,
+    "googleDomain": "google.com",
+    "locationRequested": "Cairo,Cairo Governorate,Egypt",
+    "locationUsed": "Cairo,Cairo Governorate,Egypt",
+    "hl": "ar-eg",
+    "gl": "eg",
+    "totalResults": 118,
+    "googleTimeDisplayed": 0.15
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "تعلم أساسيات البرمجة",
+      "link": "https://harmash.com/tutorials/programming/overview",
+      "displayedLink": "https://harmash.com › tutorials › programming › overview",
+      "snippet": "هرمش هو موقع تعليمي مجاني يهتم بعلوم الكمبيوتر و يقدم إليك المعرفة بشكل مبسّط و مفصّل، و هو المكان المناسب لأي شخص يطمح بأن يصبح مبرمجاً محترفاً و مبدعاً في ...",
+      "source": "موقع هرمش"
+    },
+    {
+      "position": 2,
+      "title": "أفضل 10 قنوات عربية لتعليم البرمجة بالمجان",
+      "link": "https://nouvil.net/%D8%A3%D9%81%D9%84%D8%B6-10-%D9%82%D9%86%D9%88%D8%A7%D8%AA-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D8%AC/",
+      "displayedLink": "https://nouvil.net › Blog",
+      "snippet": "أفضل 10 قنوات عربية لتعليم البرمجة بالمجان · 1- Abdelrahman Gamal · 2- elzero web school · 3- codizella · 4- حسونة أكاديمي · 5- Muammed Essa · 6- ...",
+      "source": "Nouvil"
+    },
+    {
+      "position": 3,
+      "title": "أريد تعلم البرمجة ولا أعرف من أين أبدأ، فما هي أفضل المواقع لذلك؟",
+      "link": "https://ar.quora.com/%D8%A3%D8%B1%D9%8A%D8%AF-%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D9%88%D9%84%D8%A7-%D8%A3%D8%B9%D8%B1%D9%81-%D9%85%D9%86-%D8%A3%D9%8A%D9%86-%D8%A3%D8%A8%D8%AF%D8%A3-%D9%81%D9%85%D8%A7",
+      "displayedLink": "أكثر من ٥٠ إجابة · قبل ٤ سنوات",
+      "snippet": "أريد تعلم البرمجة ولا أعرف من أين أبدأ، فما هي أفضل المواقع لذلك؟",
+      "source": "Quora"
+    },
+    {
+      "position": 4,
+      "title": "أفضل 10 مواقع برمجة مجانية في 2026 (مُختبَرة ومُرتّبة)",
+      "link": "https://coddy.tech/free-coding-websites/ar",
+      "displayedLink": "https://coddy.tech › free-coding-websites",
+      "snippet": "1. Coddy. الأفضل إجمالًا للتعلّم العملي التفاعلي · 2. freeCodeCamp. الأفضل لـ: المتعلّمون ذاتيو الدافع الراغبون في منهج طويل ومجاني قائم على ...",
+      "source": "Coddy Tech"
+    },
+    {
+      "position": 5,
+      "title": "تعلم البرمجة من الصفر حتى الاحتراف - دليل شامل 2024",
+      "link": "https://www.syntaxroom.com/blog/learn-programming-from-scratch-complete-guide",
+      "displayedLink": "https://www.syntaxroom.com › blog › learn-programmi...",
+      "snippet": "Syntax Room هو موقع تعلم البرمجة الرائد في مصر والوطن العربي، متخصص في تعلم البرمجة للمبتدئين باللغة العربية مع ضمان الجودة والاحترافية. مميزات ...",
+      "source": "syntaxroom.com"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "كيف يمكنني تعلم البرمجة باللغة العربية؟"
+    },
+    {
+      "question": "ما هي لغة البرمجة عالية المستوى؟"
+    },
+    {
+      "question": "ما فائدة تعلم البرمجة؟"
+    },
+    {
+      "question": "ما هي لغات البرمجة الحديثة؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "أفضل 10 قنوات لتعلم البرمجة | Top 10 Arab channels for ...",
+      "link": "https://www.youtube.com/watch?v=CLrxIwaNUrw",
+      "platform": "YouTube",
+      "channel": "Ali Shahin"
+    },
+    {
+      "position": 2,
+      "title": "أفضل 10 قنوات لتعلم البرمجة | Top 10 Arab channels for ...",
+      "link": "https://www.youtube.com/watch?v=5oogzM5-M9Y",
+      "platform": "YouTube",
+      "channel": "Spicy Coding"
+    },
+    {
+      "position": 3,
+      "title": "افضل اربع مواقع لتعلم البرمجة باللغة العربية",
+      "link": "https://www.youtube.com/watch?v=EYseoiYst0Q",
+      "platform": "YouTube",
+      "channel": "اتعلم ببساطة"
+    }
+  ]
+}
