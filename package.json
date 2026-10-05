@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/capture-snapshots.mjs && next build",
+    "build": "node scripts/capture-snapshots.mjs && node scripts/validate-snapshots.mjs && next build",
     "start": "next start",
     "check": "tsc --noEmit",
     "capture:snapshots": "SERPAPI_CAPTURE_ON_BUILD=true node scripts/capture-snapshots.mjs"
