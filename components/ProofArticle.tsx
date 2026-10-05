@@ -15,17 +15,18 @@ export function ProofArticle({
   children: ReactNode;
 }) {
   return (
-    <main className="shell articleShell articleShellV2" dir={dir} lang={dir === "rtl" ? "ar" : "en"}>
-      <header className="subpageHeader">
-        <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
-        <div className="subpageHeaderActions">
-          <Link className="subpageGhost" href="/proof">Proof</Link>
-          <Link className="subpageAction" href="/">Demo</Link>
+    <main className="shell articleShell articleShellV3" dir={dir} lang={dir === "rtl" ? "ar" : "en"}>
+      <header className="subpageHeader portfolioHeader">
+        <div className="subpageHeaderInner">
+          <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
+          <nav className="articleTopActions" aria-label="Project navigation">
+            <Link className="subpageGhost" href="/proof">Proof</Link>
+            <Link className="subpageAction compactHeaderAction" href="/">Demo</Link>
+          </nav>
         </div>
       </header>
 
-      <header className="articleHero articleHeroV2">
-        <p className="proofKicker">{eyebrow}</p>
+      <header className="articleHero articleHeroCompact">
         <h1>{title}</h1>
         <p>{intro}</p>
       </header>
