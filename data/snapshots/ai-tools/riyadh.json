@@ -1,0 +1,97 @@
+{
+  "marketId": "riyadh",
+  "queryId": "ai-tools",
+  "capturedAt": "2026-10-05T04:34:16.992Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3287647787463aa155def",
+    "status": "Success",
+    "totalTimeTaken": 81.56,
+    "googleDomain": "google.com",
+    "locationRequested": "Riyadh,Riyadh Province,Saudi Arabia",
+    "locationUsed": "Riyadh,Riyadh Province,Saudi Arabia",
+    "hl": "ar-sa",
+    "gl": "sa",
+    "totalResults": 91400,
+    "googleTimeDisplayed": 0.15
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "أفضل 8 أدوات برمجة Vibe لبناء تطبيقات الذكاء الاصطناعي (2026)",
+      "link": "https://translate.google.com/translate?u=https://www.knack.com/blog/vibe-coding-tools-guide/&hl=ar&sl=en&tl=ar&client=srp",
+      "displayedLink": "https://www.knack.com › Blog",
+      "snippet": "مراجعات معمقة: أفضل 8 أدوات برمجة Vibe لعام 2026 · 1. منصة Knack's Vibe للبرمجة · 2. منصة برمجة Vibe من Lovable · 3. منصة ترميز Vibe من Bolt · 4 ...",
+      "source": "knack.com"
+    },
+    {
+      "position": 2,
+      "title": "أفضل أدوات تطوير تطبيقات الذكاء الاصطناعي في عام 2026",
+      "link": "https://translate.google.com/translate?u=https://lovable.dev/guides/best-ai-app-builders&hl=ar&sl=en&tl=ar&client=srp",
+      "displayedLink": "https://lovable.dev › Guides › Best Apps & Tools",
+      "snippet": "1. لوفابل: أفضل أداة لبناء تطبيقات الذكاء الاصطناعي للمؤسسين الذين يحتاجون إلى تطبيق كامل، وبسرعة · 2. بولت: الأفضل للفرق التي تعرض الأفكار بسرعة.",
+      "source": "Lovable"
+    },
+    {
+      "position": 3,
+      "title": "🚀 5 أدوات ذكاء اصطناعي لازم تعرفها في 2026 الذكاء الاصطناعي ...",
+      "link": "https://www.instagram.com/p/DYKn3zyiegH/",
+      "displayedLink": "أكثر من ١٫٤ ألف معجب · قبل ٤ أشهر",
+      "snippet": "إليك 5 أدوات تساعدك تشتغل أسرع وتنظم أفكارك بشكل أفضل: 1️⃣ ChatGPT للكتابة، توليد الأفكار، الترجمة، ترتيب المحتوى، كتابة النصوص التسويقية، ...",
+      "source": "Instagram · amer.alshek"
+    },
+    {
+      "position": 4,
+      "title": "أفضل 5 نماذج برمجة ذكاء اصطناعي صغيرة يمكنك تشغيلها محليًا",
+      "link": "https://translate.google.com/translate?u=https://www.kdnuggets.com/top-5-small-ai-coding-models-that-you-can-run-locally&hl=ar&sl=en&tl=ar&client=srp",
+      "displayedLink": "https://www.kdnuggets.com › top-5-small-ai-coding-mo...",
+      "snippet": "Apriel-1.5-15B-Thinker هو نموذج برمجة مفتوح الوزن ومتمحور حول التفكير من ServiceNow-AI، مصمم خصيصًا لمعالجة مهام هندسة البرمجيات في العالم ...",
+      "source": "KDnuggets"
+    },
+    {
+      "position": 5,
+      "title": "26 أداة ومنصة لتطوير البرمجيات [قائمة 2026]",
+      "link": "https://translate.google.com/translate?u=https://spacelift.io/blog/software-development-tools&hl=ar&sl=en&tl=ar&client=srp",
+      "displayedLink": "https://spacelift.io › blog › software-development-tools",
+      "snippet": "تقدم المساعدات المدعومة بالذكاء الاصطناعي اقتراحات برمجية، وإكمال تلقائي، ومساعدة في كتابة وتصحيح الأخطاء البرمجية. GitHub Copilot، Codeium، ...",
+      "source": "Spacelift"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هي أفضل 10 أدوات الذكاء الاصطناعي؟"
+    },
+    {
+      "question": "كيف تستخدم الذكاء الاصطناعي كمبرمج؟"
+    },
+    {
+      "question": "ما هو بديل ChatGPT المجاني؟"
+    },
+    {
+      "question": "ما هو أفضل برنامج برمجة؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "نظرة على ادوات الذكاء الاصطناعي التي يحتاجها كل مبرمج",
+      "link": "https://www.youtube.com/watch?v=GrY-qG7tt9o",
+      "platform": "YouTube",
+      "channel": "Easy Code البرمجة بطريقة مبسطة"
+    },
+    {
+      "position": 2,
+      "title": "أهم 5 أدوات للذكاء الاصطناعي للمبرمجين #Ai #تعلم_Ai ...",
+      "link": "https://www.instagram.com/reel/DV3dheFiIfI/",
+      "platform": "Instagram",
+      "channel": "Dheaa Anwar Alhemyari 📲"
+    },
+    {
+      "position": 3,
+      "title": "أهم 3 أدوات للذكاء الاصطناعي للمبرمجين #Ai #تعلم_Ai ...",
+      "link": "https://www.instagram.com/reel/DWyamR1FfB3/",
+      "platform": "Instagram",
+      "channel": "Dheaa Anwar Al Hemary"
+    }
+  ]
+}
