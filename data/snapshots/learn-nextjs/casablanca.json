@@ -1,0 +1,66 @@
+{
+  "marketId": "casablanca",
+  "queryId": "learn-nextjs",
+  "capturedAt": "2026-10-05T16:26:59.531Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3cfcc3d87017941fc38e2",
+    "status": "Success",
+    "totalTimeTaken": 4.76,
+    "googleDomain": "google.com",
+    "locationRequested": "Casablanca,Casablanca-Settat,Morocco",
+    "locationUsed": "Casablanca,Casablanca-Settat,Morocco",
+    "hl": "ar-ma",
+    "gl": "ma",
+    "totalResults": 65900,
+    "googleTimeDisplayed": 0.32
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "المستوى الثالث – الاتصال بقاعدة البيانات وتجهيز ال model وال api",
+      "link": "https://www.youtube.com/watch?v=sdmmmPsBSqk",
+      "displayedLink": "أكثر من 90 مشاهدة · قبل شهر واحد",
+      "snippet": "ماذا ستتعلم في هذا الكورس؟ هذا ليس شرح Next.js عادي… هذا كورس هندسي متكامل يبني لك عقلية مطور حقيقي ‍ ✓ المستوى الأول – الأساس القوي ...",
+      "source": "YouTube · سعد السطوف - Saad Al-Sattouf"
+    },
+    {
+      "position": 2,
+      "title": "16- برمج متجر الكتروني باستخدام @OneEntry-Platform و #nextjs",
+      "link": "https://www.youtube.com/watch?v=bVbt2ntaoXw",
+      "displayedLink": "أكثر من 4,5 ألف مشاهدة · قبل سنة واحدة",
+      "snippet": "... NextJS 00:23:00 لوحة التحكم OneEntry Platform 00:28:30 كود ... (Should You Learn React?) هل فعلا محتاج تتعلم رياكت؟ Yehia Tech يحيى ...",
+      "source": "YouTube · Nour Homsi"
+    },
+    {
+      "position": 3,
+      "title": "أفضل دورات في Next.js عبر الإنترنت",
+      "link": "https://www.udemy.com/ar/topic/nextjs-p/?p=2&srsltid=AU7gw4UJR1Xs4fRQw1pxN_wfWfjMi3TFKS6HzH8vmtbeFL1Q5jKF0511",
+      "displayedLink": "https://www.udemy.com › topic › nextjs-p",
+      "snippet": "هل تتطلع إلى تطوير مهاراتك في Next.js؟ نحن هنا لمساعدتك. · احصل على كل ما تحتاجه لتحقيق أهدافك في حزمة واحدة مريحة. · Next JS Modern Stack - Tooling and AI.",
+      "source": "Udemy"
+    },
+    {
+      "position": 4,
+      "title": "NEXT JS 14 بالعربي : PART 37 - Pagination",
+      "link": "https://www.youtube.com/watch?v=cESAth-teEw",
+      "displayedLink": "أكثر من 1,4 ألف مشاهدة · قبل سنتين",
+      "snippet": "Comments ; NEXT JS 14 بالعربي : PART 38 - Get Article With Its Comments. Youssef · views ; لو فهمت دي كويس.. هتكون AI Engineer قوي جدا · New. 10K ...",
+      "source": "YouTube · Youssef Abbas"
+    },
+    {
+      "position": 5,
+      "title": "رشحولي كورس عربي كويسه next js",
+      "link": "https://www.facebook.com/groups/ElzeroWebSchool/posts/6590697647725910/",
+      "displayedLink": "أكثر من 10 تعليق · قبل سنتين",
+      "snippet": "اولا انصحك بالdocumentation الرسمية في موقع نيكست. وثانيا حين تبدأ التعلم انصحك بتعلم النسخة 13 لأن بينها وبين 12 تمت خلق تحديثات جدرية في ...",
+      "source": "Facebook · Elzero Web School"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "ما هو Next.js وكيف يعمل؟"
+    }
+  ],
+  "inlineVideos": []
+}
