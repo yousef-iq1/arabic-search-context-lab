@@ -53,7 +53,50 @@ export function ContextLab() {
 
   return (
     <main dir={direction} lang={isAr ? "ar" : "en"} className="shell">
-      <header className="topbar"><div><p className="eyebrow">Independent developer demo · Built with SerpApi</p><h1>{isAr ? "مختبر سياق البحث العربي" : "Arabic Search Context Lab"}</h1><p className="lede">{isAr ? "نفس السؤال العربي. سياق محلي مختلف. قارن كيف تتغير نتائج البحث بين مدن عربية مختلفة وافهم المعلمات التي صنعت الفرق." : "Same Arabic query. Different local context. Compare structured search behavior across Arab cities and inspect the parameters behind the differences."}</p></div><div className="heroActions"><Link className="lang" href="/proof">{isAr ? "ملف الإثبات" : "Proof pack"}</Link><button className="lang" onClick={() => setLocale(isAr ? "en" : "ar")}>{isAr ? "EN" : "عربي"}</button></div></header>
+      <header className="siteHeader">
+        <Link className="brand" href="/">Arabic Search Context Lab</Link>
+        <nav className="heroActions" aria-label={isAr ? "روابط المشروع" : "Project links"}>
+          <Link className="textLink" href="/proof">{isAr ? "ملف الإثبات" : "Proof"}</Link>
+          <Link className="textLink" href="/source">{isAr ? "المصدر" : "Source"}</Link>
+          <button className="lang" onClick={() => setLocale(isAr ? "en" : "ar")}>{isAr ? "EN" : "عربي"}</button>
+        </nav>
+      </header>
+
+      <section className="hero">
+        <div className="heroCopy">
+          <p className="eyebrow">{isAr ? "مشروع مستقل مبني باستخدام SerpApi" : "Independent project built with SerpApi"}</p>
+          <h1>{isAr ? "بيانات البحث للمطورين، مو صفحات بحث للمستخدمين." : "Search data for software — not search pages for people."}</h1>
+          <p className="lede">{isAr
+            ? "SerpApi تحوّل نتائج محركات البحث إلى بيانات منظّمة يستطيع التطبيق أو الـAI agent استخدامها مباشرة، بينما تتولى هي تعقيد الـscraping والـCAPTCHA والـproxies وتغيّر الصفحات."
+            : "SerpApi turns search-engine surfaces into structured data that applications and AI agents can use directly, while handling scraping complexity, CAPTCHAs, proxies, and changing layouts."}</p>
+          <div className="heroCtas">
+            <a className="primaryCta" href="#lab">{isAr ? "شاهد التجربة" : "Open the experiment"}</a>
+            <Link className="secondaryCta" href="/proof">{isAr ? "لماذا هذا يثبت ملاءمتي للدور" : "Why this is role evidence"}</Link>
+          </div>
+        </div>
+        <aside className="heroProof">
+          <span className="miniLabel">{isAr ? "هذا المشروع يثبت جزءًا واحدًا فقط" : "This project proves one slice"}</span>
+          <strong>{isAr ? "Localization لسياق البحث العربي" : "Arabic search-context localization"}</strong>
+          <p>{isAr
+            ? "نفس الاستعلام، أربع مدن، ومعلمات location وgl وhl واضحة. الهدف مو تمثيل كل منتج SerpApi — بل إظهار استخدام حقيقي للـAPI وتحويله إلى شرح تقني قابل للفحص."
+            : "Same intent, four cities, explicit location/gl/hl inputs. It is not a clone of SerpApi; it is inspectable evidence of real API use, localization thinking, and developer education."}</p>
+        </aside>
+      </section>
+
+      <section className="productStrip" aria-label={isAr ? "أمثلة على استخدام SerpApi" : "SerpApi use cases"}>
+        <div><span>01</span><strong>{isAr ? "AI وAgents" : "AI & agents"}</strong><p>{isAr ? "بحث حي وبيانات ويب منظّمة للأنظمة الذكية." : "Fresh web/search data for AI systems."}</p></div>
+        <div><span>02</span><strong>{isAr ? "خرائط ووظائف وتسوق" : "Maps, jobs & shopping"}</strong><p>{isAr ? "واجهات بحث جاهزة بدل بناء scraper وصيانته." : "Structured search surfaces without maintaining scrapers."}</p></div>
+        <div><span>03</span><strong>{isAr ? "سفر وSEO وبحث" : "Travel, SEO & research"}</strong><p>{isAr ? "Flights وHotels وNews وTrends وغيرها ضمن منظومة واحدة." : "Flights, hotels, news, trends, and more in one API ecosystem."}</p></div>
+      </section>
+
+      <section className="experimentIntro" id="lab">
+        <p className="eyebrow">{isAr ? "التجربة" : "The experiment"}</p>
+        <h2>{isAr ? "نفس السؤال العربي. أربع سياقات محلية." : "Same Arabic question. Four local contexts."}</h2>
+        <p>{isAr
+          ? "هنا أعزل المتغيرات بدل ما أغيّر السؤال: الموقع الجغرافي، انحياز الدولة، ولغة واجهة Google. النتائج المعروضة لقطات حقيقية محفوظة من SerpApi حتى تكون التجربة العامة قابلة للفحص بدون استهلاك API لكل زائر."
+          : "The query stays fixed while geographic origin, country bias, and Google locale change. The public experience uses real saved SerpApi captures so anyone can inspect the behavior without spending API quota per visitor."}</p>
+      </section>
+
       <section className="controlPanel" aria-label={isAr ? "إعداد المقارنة" : "Comparison controls"}>
         <label><span>{isAr ? "الاستعلام" : "Query"}</span><select value={queryId} onChange={(e) => setQueryId(e.target.value as QueryId)} disabled={loading}>{Object.values(QUERY_PRESETS).map((item) => (<option key={item.id} value={item.id}>{isAr ? item.ar : item.en}</option>))}</select></label>
         <div><span className="label">{isAr ? "الأسواق" : "Markets"}</span><div className="marketPicker">{MARKET_IDS.map((id) => { const market = MARKETS[id]; const active = markets.includes(id); return (<button key={id} className={active ? "market active" : "market"} onClick={() => toggleMarket(id)} aria-pressed={active} disabled={loading}><strong>{isAr ? market.labelAr : market.labelEn}</strong><small>{isAr ? market.countryAr : market.countryEn}</small></button>); })}</div></div>
