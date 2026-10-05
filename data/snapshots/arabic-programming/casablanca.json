@@ -1,0 +1,97 @@
+{
+  "marketId": "casablanca",
+  "queryId": "arabic-programming",
+  "capturedAt": "2026-10-05T16:29:21.434Z",
+  "mode": "snapshot",
+  "metadata": {
+    "searchId": "6ac3cfccaf5fdca62852cc6f",
+    "status": "Success",
+    "totalTimeTaken": 146.66,
+    "googleDomain": "google.com",
+    "locationRequested": "Casablanca,Casablanca-Settat,Morocco",
+    "locationUsed": "Casablanca,Casablanca-Settat,Morocco",
+    "hl": "ar-ma",
+    "gl": "ma",
+    "totalResults": 118,
+    "googleTimeDisplayed": 0.25
+  },
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "البرمجة",
+      "link": "https://www.coursat.org/category/programming",
+      "displayedLink": "https://www.coursat.org › category › programming",
+      "snippet": "كورسات ودروس في لغات البرمجة المختلفة كـ لغات الويب ولغات برمجة تطبيقات الهواتف ولغات برمجة تطبيقات سطح المكتب.",
+      "source": "Coursat.org"
+    },
+    {
+      "position": 2,
+      "title": "أفضل 10 قنوات عربية لتعليم البرمجة بالمجان",
+      "link": "https://nouvil.net/%D8%A3%D9%81%D9%84%D8%B6-10-%D9%82%D9%86%D9%88%D8%A7%D8%AA-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D8%AC/",
+      "displayedLink": "https://nouvil.net › Blog",
+      "snippet": "أفضل 10 قنوات عربية لتعليم البرمجة بالمجان · 1- Abdelrahman Gamal · 2- elzero web school · 3- codizella · 4- حسونة أكاديمي · 5- Muammed Essa · 6- ...",
+      "source": "Nouvil"
+    },
+    {
+      "position": 3,
+      "title": "ماهوه أفضل مواقع لي تعليم البرمجة؟",
+      "link": "https://ar.quora.com/%D9%85%D8%A7%D9%87%D9%88%D9%87-%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D9%84%D9%8A-%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9",
+      "displayedLink": "أكثر من 70 إجابة · قبل 3 سنوات",
+      "snippet": "ماهوه أفضل مواقع لي تعليم البرمجة؟",
+      "source": "Quora"
+    },
+    {
+      "position": 4,
+      "title": "تعلم البرمجة من الصفر حتى الاحتراف - دليل شامل 2024",
+      "link": "https://www.syntaxroom.com/blog/learn-programming-from-scratch-complete-guide",
+      "displayedLink": "https://www.syntaxroom.com › blog › learn-programmi...",
+      "snippet": "Syntax Room هو موقع تعلم البرمجة الرائد في مصر والوطن العربي، متخصص في تعلم البرمجة للمبتدئين باللغة العربية مع ضمان الجودة والاحترافية. مميزات ...",
+      "source": "syntaxroom.com"
+    },
+    {
+      "position": 5,
+      "title": "تعلم البرمجة للمبتدئين - كتب برمجة",
+      "link": "https://academy.hsoub.com/files/35-%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86/",
+      "displayedLink": "https://academy.hsoub.com › كتب › كتب برمجة",
+      "snippet": "هذا الكتاب مترجم عن الكتاب Learning to Program لكاتبه Alan Gauld وهو مبرمج شبه متقاعد بخبرة تصل إلى أربعين عامًا في البرمجة، ويُعد الكتاب من ...",
+      "source": "أكاديمية حسوب"
+    }
+  ],
+  "relatedQuestions": [
+    {
+      "question": "من التطبيقات البرمجية؟"
+    },
+    {
+      "question": "كيف يمكنني تعلم البرمجة باللغة العربية؟"
+    },
+    {
+      "question": "ما هي لغة البرمجة عالية المستوى؟"
+    },
+    {
+      "question": "ما فائدة تعلم البرمجة؟"
+    }
+  ],
+  "inlineVideos": [
+    {
+      "position": 1,
+      "title": "أفضل 10 قنوات لتعلم البرمجة | Top 10 Arab channels for ...",
+      "link": "https://www.youtube.com/watch?v=CLrxIwaNUrw",
+      "platform": "YouTube",
+      "channel": "Ali Shahin"
+    },
+    {
+      "position": 2,
+      "title": "أفضل 10 قنوات لتعلم البرمجة | Top 10 Arab channels for ...",
+      "link": "https://www.youtube.com/watch?v=5oogzM5-M9Y",
+      "platform": "YouTube",
+      "channel": "Spicy Coding"
+    },
+    {
+      "position": 3,
+      "title": "أفضل 5 مواقع لا غنى عنها لأي مبرمج",
+      "link": "https://www.youtube.com/watch?v=pIQBPaWH_Cs",
+      "platform": "YouTube",
+      "channel": "اتعلم ببساطة"
+    }
+  ]
+}
