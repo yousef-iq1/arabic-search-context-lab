@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     title: "Arabic Technical Walkthrough",
     description:
       "A short Arabic walkthrough of the product, localization choices, and engineering decisions behind Arabic Search Context Lab.",
-    images: ["https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster"],
+    images: ["https://arabic-search-context-lab-prod.onrender.com/walkthrough-poster.jpg"],
   },
 };
 
-const VIDEO_URL = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough";
-const POSTER_URL = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster";
+const VIDEO_URL = "/walkthrough.mp4";
+const POSTER_URL = "/walkthrough-poster.jpg";
 
 function ArrowIcon() {
   return (
@@ -39,10 +39,6 @@ export default function WalkthroughPage() {
 
       <section className="walkthroughHero">
         <div>
-          <span className="walkthroughMeta">
-            <i aria-hidden="true" />
-            Arabic · 1:29
-          </span>
           <h1>Arabic technical walkthrough.</h1>
           <p>
             A short, real explanation of the product, localization choices, and
