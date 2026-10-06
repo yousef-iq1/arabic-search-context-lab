@@ -217,6 +217,9 @@ export function ContextLab() {
             <Link className="sourceTextLink" href="/source">
               {isAr ? "كيف بنيته" : "How it’s built"}
             </Link>
+            <Link className="sourceTextLink walkthroughTextLink" href="/walkthrough">
+              {isAr ? "شاهد الفيديو" : "Watch walkthrough"}
+            </Link>
           </div>
         </div>
 
