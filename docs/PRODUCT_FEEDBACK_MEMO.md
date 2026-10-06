@@ -1,102 +1,62 @@
-# Product and Documentation Notes
+# Notes from building with SerpApi
 
-**Context:** I wrote these notes while building Arabic Search Context Lab with Next.js and TypeScript.
+These notes come from building Arabic Search Context Lab with Next.js and TypeScript. They are based on my own experience, not broad customer research.
 
-They describe my own experience. They are not a bug report and they do not represent broad customer research.
+## The first request was straightforward
 
-## Short version
+The Playground made it easy to get a working request. Most of my questions came after that, when I had to separate local search settings, handle a slow request, and decide how the browser should talk to the server safely.
 
-The first request was easy to make in the Playground. The harder parts came after that:
+## location, gl, and hl make more sense when shown together
 
-- understanding the difference between `location`, `gl`, and `hl`;
-- deciding what to do when a search takes a long time;
-- applying the API-key guidance in a current Next.js app.
+I understood each parameter from the docs, but I still had to think carefully about how they differ:
 
-The docs idea I would test first is one complete example that puts those three topics in the same place.
+- `location`: the geographic origin I want to simulate
+- `gl`: the country bias
+- `hl`: the Google interface locale
 
-## 1. location, gl, and hl
+A small example showing the same query in two countries would make the difference easier to see for a new developer.
 
-### What happened
+## Async search needs one complete example
 
-The three values are documented separately, but at first they can look like different versions of the same setting.
+A Baghdad request took about 33 seconds during testing. That pushed me toward `async=true` and Search Archive.
 
-For this project I treated them as:
+The SDK gives the pieces, but I still had to decide how often to check, when to stop, how to handle errors, and what to show when only some markets are ready.
 
-- `location`: city-level search location;
-- `gl`: country bias;
-- `hl`: Google interface language and locale.
+A compact TypeScript example that covers submit, wait, retry, success, and error would be useful.
 
-### What I would try
+## A current Next.js server example would save time
 
-Add a small example that runs one query in two countries and shows all three values side by side.
+The security guidance is clear that the API key should not live in browser code.
 
-An Arabic example would be useful because Arabic is used across many country contexts.
+A current App Router example could show:
 
-## 2. Async search in TypeScript
+- a Route Handler
+- `process.env.SERPAPI_KEY`
+- a client request to the Route Handler
+- optional input validation
 
-### What happened
+That would connect the security rule to a stack many frontend developers already use.
 
-One Baghdad test took about 33 seconds. `async=true` and Search Archive gave me the pieces I needed, but I still had to decide:
+## Finding local settings could be easier from a market name
 
-- how often to check;
-- when to stop;
-- which statuses count as finished;
-- what to show if one city finishes before another.
+I started with questions like "what should I use for Iraq?" rather than "where is the hl table?"
 
-### What I would try
+A small market example near the localization docs could shorten that path.
 
-Add a small TypeScript example that submits a search, checks the status with a retry limit, and returns either a result or a clear error.
+## Public demos and quota
 
-## 3. Next.js server example
+A public demo can spend a live API request every time somebody visits.
 
-### What happened
+For this project I used saved real results on the public site and kept live mode available on the server for controlled tests.
 
-The security docs are clear that the API key should not be exposed in browser code.
+A short note about that pattern could help people publishing tutorials, hackathon projects, or portfolio demos.
 
-### What I would try
+## What worked well for me
 
-Add a current App Router example that shows:
+- The Playground was quick to use.
+- The response metadata made the search settings easy to verify.
+- The JavaScript/TypeScript SDK worked well in a Next.js server route.
+- Search IDs and Search Archive solved the slow-search problem.
+- The security docs are clear about keeping keys out of browser code.
 
-- a Route Handler;
-- `process.env.SERPAPI_KEY`;
-- client code calling only the app's own route;
-- optional input validation;
-- no secret in `NEXT_PUBLIC_*`.
-
-That would make the server/client boundary easy to copy correctly.
-
-## 4. Country and locale lookup
-
-### What happened
-
-A developer may start with “I need results for Iraq” instead of starting with `hl` or `location`.
-
-### What I would try
-
-Link the country, language, and location lookups more closely from the Google Search API page, or add a tiny country-to-parameter table.
-
-## 5. Public demos and quota
-
-### What happened
-
-A public portfolio can turn every visitor into a live API request.
-
-### What I did here
-
-The public site reads saved SerpApi results, and live mode stays available on the server for testing.
-
-### What I would try
-
-Add a short note for tutorials, portfolios, and hackathon projects about caching or saved results.
-
-## What worked well
-
-- The Playground made the first localized request easy to inspect.
-- The response includes enough metadata to check the settings that were used.
-- The JavaScript/TypeScript SDK fit cleanly into a Next.js server route.
-- Search IDs and Search Archive gave me a workable path for slow searches.
-- The security docs are clear about keeping the key off the client.
-
-## What I would check before recommending changes
-
-I would look at support tickets, common developer questions, search timing data, and feedback from more users. My experience is useful input, but it is still one developer's experience.
+If I were working inside the team, I would compare these notes with support questions and other developer feedback before treating any of them as a priority.

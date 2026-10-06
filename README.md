@@ -1,79 +1,64 @@
 # Arabic Search Context Lab
 
-This is a small SerpApi project I built while applying for the Developer Advocate (Arabic) role.
+I built this project while preparing my application for SerpApi's Arabic Developer Advocate role.
 
-It runs the same Arabic search in four cities:
+The idea is simple: keep the Arabic query the same, change the local search settings, and compare what comes back. The demo currently uses Baghdad, Riyadh, Cairo, and Casablanca.
 
-- Baghdad, Iraq
-- Riyadh, Saudi Arabia
-- Cairo, Egypt
-- Casablanca, Morocco
+It is built with Next.js, TypeScript, and SerpApi.
 
-The query stays the same. The project changes `location`, `gl`, and `hl` so the differences are easier to inspect.
-
-Built with **Next.js, TypeScript, and SerpApi**.
-
-> I built this project independently. I do not work for SerpApi, and SerpApi did not ask me to build it.
-
-## Project links
+## Try it
 
 - Demo: https://arabic-search-context-lab-prod.onrender.com
-- Work for this application: https://arabic-search-context-lab-prod.onrender.com/proof
+- Why I built it: https://arabic-search-context-lab-prod.onrender.com/proof
 - Arabic walkthrough: https://arabic-search-context-lab-prod.onrender.com/walkthrough
-- Arabic technical guide: https://arabic-search-context-lab-prod.onrender.com/guide
-- Arabic localization sample: https://arabic-search-context-lab-prod.onrender.com/localization
-- Product and docs notes: https://arabic-search-context-lab-prod.onrender.com/feedback
-- 30/60/90 plan: https://arabic-search-context-lab-prod.onrender.com/plan
-- Build notes: https://arabic-search-context-lab-prod.onrender.com/source
+- How it is built: https://arabic-search-context-lab-prod.onrender.com/source
+- Arabic guide: https://arabic-search-context-lab-prod.onrender.com/guide
+- Localization notes: https://arabic-search-context-lab-prod.onrender.com/localization
+- Notes from using SerpApi: https://arabic-search-context-lab-prod.onrender.com/feedback
+- First 90 days: https://arabic-search-context-lab-prod.onrender.com/plan
 
-The public demo currently has **12 saved SerpApi captures**: three Arabic queries in four cities. The public site reads those saved results so opening the portfolio does not spend API quota.
+This is my own project. I do not work for SerpApi and it is not an official SerpApi product.
 
 ## What the demo does
 
-- Sends the same Arabic query with different `location`, `gl`, and `hl` values
-- Compares organic results across four cities
-- Uses Arabic and English layouts with RTL/LTR support
-- Keeps the SerpApi key on the server
-- Supports `async=true` and Search Archive polling in live mode
-- Lets each city finish or fail separately
-- Shows when each saved result was captured
-- Includes the TypeScript request pattern used by the project
+The public version has three Arabic query presets. Each one has a saved result for four cities, so there are 12 real SerpApi captures in the repo.
 
-## Why live mode uses async search
+For every city I keep three settings separate:
 
-One Baghdad test took about 33 seconds. I did not want one slow city to hold the whole browser request open, so live mode submits the search with `async=true`, keeps the search ID, and checks Search Archive until each result is ready or the retry limit is reached.
+- `location`: the city-level search location
+- `gl`: the country bias
+- `hl`: the Google interface locale
 
-## Saved results and live mode
+The API key stays on the server.
 
-Production uses saved results by default.
+## Why the public demo uses saved results
 
-Live mode can be enabled on the server with:
+I started with live requests. During testing, some searches finished quickly and others took much longer. One Baghdad test took about 33 seconds.
 
-```env
-SERPAPI_LIVE_MODE=true
-SERPAPI_KEY=your_private_key
-```
+For live mode I use `async=true`, keep the returned search ID, and check Search Archive until the result is ready. Each market is handled separately, so one slow result does not block the others.
 
-The key never goes into browser code or the repository.
+For the public site I use saved SerpApi results instead. That keeps the demo reliable and avoids spending API quota every time somebody opens it.
 
-Saved files live here:
+The saved files are here:
 
 ```text
 data/snapshots/<query-id>/<market-id>.json
 ```
 
-Every saved file came from a SerpApi response. I did not create fake search results.
+Every saved result came from a real SerpApi response. The UI shows that it is a saved snapshot and includes the capture time.
 
-The first four-city capture reported these SerpApi times:
+## Markets
 
-- Baghdad: 44.87s
-- Riyadh: 81.56s
-- Cairo: 0.49s
-- Casablanca: 203.97s
+| City | `location` | `gl` | `hl` |
+| --- | --- | --- | --- |
+| Baghdad | `Baghdad,Baghdad Governorate,Iraq` | `iq` | `ar-iq` |
+| Riyadh | `Riyadh,Riyadh Province,Saudi Arabia` | `sa` | `ar-sa` |
+| Cairo | `Cairo,Cairo Governorate,Egypt` | `eg` | `ar-eg` |
+| Casablanca | `Casablanca,Casablanca-Settat,Morocco` | `ma` | `ar-ma` |
 
-Those numbers are from that capture only. They are not general latency claims.
+I checked these location strings against SerpApi's supported locations before capturing the public data.
 
-## Local development
+## Run it locally
 
 ```bash
 npm install
@@ -81,7 +66,14 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Without saved results, use live mode locally with your own SerpApi key.
+For live mode, add your own SerpApi key on the server:
+
+```env
+SERPAPI_LIVE_MODE=true
+SERPAPI_KEY=your_private_key
+```
+
+Do not put the key in browser code.
 
 ## Checks
 
@@ -92,21 +84,4 @@ npm run build
 
 ## Stack
 
-- Next.js 16
-- React 19
-- TypeScript
-- SerpApi JavaScript/TypeScript SDK
-- Zod
-
-## Search settings
-
-| City | `location` | `gl` | `hl` |
-| --- | --- | --- | --- |
-| Baghdad | `Baghdad,Baghdad Governorate,Iraq` | `iq` | `ar-iq` |
-| Riyadh | `Riyadh,Riyadh Province,Saudi Arabia` | `sa` | `ar-sa` |
-| Cairo | `Cairo,Cairo Governorate,Egypt` | `eg` | `ar-eg` |
-| Casablanca | `Casablanca,Casablanca-Settat,Morocco` | `ma` | `ar-ma` |
-
-## What I left out
-
-There are no accounts, billing, chatbot features, social features, or open-ended public search. The project is intentionally small so the search-context comparison stays easy to understand.
+Next.js 16, React 19, TypeScript, SerpApi, and Zod.

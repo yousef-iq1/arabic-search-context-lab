@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 const items = [
-  { title: "Arabic technical walkthrough", type: "Video", status: "1:29", text: "A short Arabic walkthrough of the demo, the localization settings, and the main engineering choices.", href: "/walkthrough" },
-  { title: "Public GitHub repository", type: "Code", status: "Public", text: "Source code, setup notes, saved search results, and the SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
-  { title: "How the project is built", type: "Engineering", status: "Page", text: "Server-side key handling, localization settings, async search, per-city result handling, and saved results.", href: "/source" },
-  { title: "Arabic localization sample", type: "Localization", status: "Page", text: "A small Arabic docs sample for location, gl, hl, async search, cache, and output formats.", href: "/localization" },
-  { title: "Arabic Search Context Lab", type: "Project", status: "12 captures", text: "Three Arabic searches across Baghdad, Riyadh, Cairo, and Casablanca.", href: "/" },
-  { title: "Arabic technical guide", type: "Writing", status: "Page", text: "Arabic notes on location, gl, hl, server-side keys, async search, Search Archive, and the public demo setup.", href: "/guide" },
-  { title: "Product and docs notes", type: "Feedback", status: "Page", text: "What was easy, where I got stuck, and a few changes I would check with more developers.", href: "/feedback" },
-  { title: "Arabic market 30/60/90 plan", type: "Plan", status: "Page", text: "A practical first-90-days plan for developer content, community work, feedback, and growth.", href: "/plan" },
+  { title: "Arabic technical walkthrough", type: "Video", status: "1:29", text: "I recorded a short Arabic walkthrough of the demo, the localization settings, and the main engineering choices.", href: "/walkthrough" },
+  { title: "Public GitHub repository", type: "Code", status: "Public", text: "The full project is public, including setup notes, saved results, and the server-side SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
+  { title: "How it is built", type: "Code", status: "Published", text: "A short look at how I handled localization, the API key, async search, partial failures, and saved results.", href: "/source" },
+  { title: "Arabic localization sample", type: "Localization", status: "Published", text: "A small Arabic docs sample for location, gl, hl, async search, caching, and output formats.", href: "/localization" },
+  { title: "Arabic Search Context Lab", type: "Product", status: "12 saved results", text: "Three Arabic searches across Baghdad, Riyadh, Cairo, and Casablanca using explicit local search settings.", href: "/" },
+  { title: "Arabic technical guide", type: "Writing", status: "Published", text: "An Arabic guide to the implementation, the API settings, security, and the tradeoffs I ran into while building it.", href: "/guide" },
+  { title: "Notes from using SerpApi", type: "Feedback", status: "Published", text: "What was easy, what slowed me down, and a few documentation changes I would test with more developer feedback.", href: "/feedback" },
+  { title: "First 90 days", type: "Plan", status: "Published", text: "What I would try first: talk to developers, ship useful Arabic technical material, and keep the things people actually use.", href: "/plan" },
 ];
 
 function InfoIcon() {
@@ -32,14 +32,15 @@ export default function ProofPage() {
 
       <section className="proofLead proofLeadCompact">
         <div className="proofTitleRow">
-          <h1>Work I did for this role.</h1>
+          <h1>Why I built this.</h1>
           <details className="miniInfo proofTruthInfo">
             <summary aria-label="About this project" title="About this project"><InfoIcon /></summary>
             <div>
-              I built this independently. I do not work for SerpApi, and SerpApi did not ask me to build it.
+              I built this independently for my application. I do not work for SerpApi, and I am not claiming any existing community partnerships.
             </div>
           </details>
         </div>
+        <p>I wanted to apply with something you could open, run, and inspect.</p>
       </section>
 
       <section className="evidenceGrid">

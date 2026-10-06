@@ -1,103 +1,73 @@
-# Arabic Developer Community Notes: Public Starting Points
+# Developer communities I would start with
 
-**Status:** research I did before applying. These are public communities and ideas to test. They are **not SerpApi partnerships and I have not contacted them on SerpApi's behalf**.
+These are public communities and events I found while researching the role. I do not have partnerships with them.
 
-## How I picked the examples
+The list is simply a starting point for conversations and small technical experiments.
 
-A community belongs in the first-wave map only if there is recent public evidence of technical activity relevant to SerpApi use cases: AI agents, data, web/cloud, developer workshops, hackathons, or large developer conferences.
+## Iraq
 
-I would start by learning what developers in each community are already building and where search data fits. I would not start by asking for sponsorship or promotion.
+### Iraqi Programmers Syndicate and Iraqi Programmer Day
 
-| Market | Public signal | Why it is relevant | First low-risk experiment | What to measure |
-| --- | --- | --- | --- | --- |
-| Iraq / Baghdad | Iraqi Programmers Syndicate; Iraqi Programmer Day 2026, 9-10 Oct at Baghdad International Fair | Direct access to Iraqi programmers, tech professionals, entrepreneurs and institutions; strongest place for first-hand field learning | Attend in personal capacity; 8-20 structured developer conversations; if later authorized, propose a localized search/API workshop | Repeated use cases, current scraping/search approaches, adoption blockers, preferred Arabic/English learning format |
-| Saudi Arabia | GDG Cloud Saudi, GDG Cloud Riyadh, GDG Jeddah; 2026 activity includes AI agents, data analysis/dashboards, Gemini Enterprise, cloud workshops | Active AI/data audience maps naturally to live web/search-data use cases | 45-60 min workshop: “Give an AI agent current localized search data safely” | Registrationtoattendance, first API calls, technical questions, follow-up requests |
-| Egypt / Cairo | GDG Cairo (2,425 members on public page), GDG New Cairo (1,363); Build with AI, AI hackathon, I/O Extended, DevFest | Large, visibly active builder ecosystem with hands-on AI/web events and upcoming DevFests | Arabic localization + AI/search lab, or challenge using structured search data | Builders completing demo, repo/example usage, signup activation, recurring partner interest |
-| Morocco / Casablanca | GDG Casablanca; GDG on Campus ENSAM Casablanca; recent AI/ML and smart-resume workshops | Useful Maghreb test where Arabic exists alongside French/English technical behavior | Localized-search workshop comparing Arabic/French/English query contexts; campus technical session | Language preference, API adoption problems, use-case differences, content-format demand |
+Official site: https://www.ips-iq.org/
 
-## Iraq - in-person starting point
+I live in Baghdad, so this is the easiest place for me to learn in person.
 
-**Public evidence**
-- Iraqi Programmers Syndicate describes Iraqi Programmer Day 2026 as a national event gathering programmers, technology professionals, entrepreneurs, public/private sectors and decision makers.
-- Official page: https://www.ips-iq.org/
+If I attend Iraqi Programmer Day before being hired, I would go in my own capacity and ask developers about:
 
-**Why first**
-- Yousef is physically in Baghdad, so this is the only market where pre-hire field learning can happen without travel or pretending remote research is local knowledge.
-- The value is not “Iraq is better than Saudi/Egypt/Morocco.” The value is cheap, immediate, first-hand learning in one underrepresented ecosystem.
+- how they use APIs today
+- whether search data is useful in their work
+- what makes technical documentation hard to use
+- whether they prefer Arabic explanation, English code terms, or a mix
+- what usually stops them from trying a paid developer tool
 
-**Do not do pre-hire**
-- Do not book a booth in SerpApi’s name.
-- Do not call yourself a SerpApi representative.
-- Do not collect random contacts as vanity evidence.
+I would not use SerpApi's name to book a booth, claim a partnership, or present myself as a company representative.
 
-## Saudi Arabia - AI/data developer channel
+## Saudi Arabia
 
-**Public evidence**
-- GDG Cloud Saudi ran Arabic sessions in Aug 2026 on building AI agents, social-data analysis, dashboards, and ML.
-- GDG Cloud Riyadh ran Sep 2026 “Agentic workflows with Antigravity” and Jul 2026 Gemini Enterprise Agent Platform.
-- GDG Jeddah public page shows 2026 activity spanning serverless/Firebase and the same AI/data program.
-- Public pages:
-  - https://gdg.community.dev/gdg-cloud-saudi/
-  - https://gdg.community.dev/gdg-cloud-riyadh/
-  - https://gdg.community.dev/gdg-jeddah/
+Public communities I would look at first:
 
-**Best SerpApi-shaped experiment**
-- “Current web/search data for AI agents” workshop.
-- Provide a simple JavaScript/Python integration and one localized Saudi search use case.
-- If interest is high, follow with office hours or a small build challenge instead of immediate sponsorship.
+- GDG Cloud Saudi
+- GDG Cloud Riyadh
+- GDG Jeddah
 
-## Egypt - scale + hands-on event density
+Their recent public activity includes AI agents, data, cloud, and developer workshops.
 
-**Public evidence**
-- GDG Cairo public page lists 2,425 members and 2026 Build with AI / I/O Extended activity plus DevFest Cairo 2026.
-- GDG New Cairo lists 1,363 members, a Sep 2026 AI Hackathon and Dec 2026 DevFest.
-- Public pages:
-  - https://gdg.community.dev/gdg-cairo/
-  - https://gdg.community.dev/gdg-new-cairo/
+A useful first experiment could be a small technical session on giving an AI agent current search data. I would only consider something larger if developers actually use the example and ask for more.
 
-**Best SerpApi-shaped experiment**
-- One technical lab built around an AI agent or market-monitoring use case that requires fresh search data.
-- Use Arabic instruction with code terms preserved in English.
-- Measure first successful request and questions, not social impressions.
+## Egypt
 
-## Morocco - Maghreb localization test
+Public communities I would look at:
 
-**Public evidence**
-- GDG Casablanca’s 2026 events include real-time prediction with Vertex AI and other developer workshops.
-- GDG on Campus ENSAM Casablanca has an active 2026 campus community with workshops/sessions/competitions and an Oct 8 general assembly.
-- Public pages:
-  - https://gdg.community.dev/gdg-casablanca/
-  - https://gdg.community.dev/gdg-on-campus-ensam-casablanca-casablanca-morocco/
+- GDG Cairo
+- GDG New Cairo
 
-**Best SerpApi-shaped experiment**
-- A workshop explicitly comparing Arabic/French/English search context, instead of assuming Modern Standard Arabic alone answers the Maghreb developer experience.
-- Use the result to decide what should be translated, left in English, or made bilingual.
+Their public calendars show active AI, web, hackathon, and DevFest activity.
 
-## How I would approach a community
+I would test a hands-on session around localized search or an AI use case that needs current web data, then watch how many people get to a working request and what questions repeat.
 
-Finding a community is only the first step.
+## Morocco
 
-1. 1. Talk to organizers and attend an event.
-2. 2. Offer something useful, such as a guide, example app, workshop, or office hours.
-3. 3. Track questions, first API use, and whether people come back.
-4. 4. Repeat it only if developers ask for more.
-5. 5. Consider a larger program only after that.
+Public communities I would look at:
 
-## First 5 experiment backlog
+- GDG Casablanca
+- GDG on Campus ENSAM Casablanca
 
-1. Baghdad field interviews at Iraqi Programmer Day (personal capacity).
-2. Arabic webinar: secure SerpApi + Next.js localized search.
-3. Saudi AI-agent workshop: adding current search data to an agent.
-4. Cairo hands-on localized-search/AI lab with a GDG-scale community.
-5. Casablanca bilingual localization experiment: Arabic/French/English developer path.
+For Morocco, I would be especially interested in how developers move between Arabic, French, and English.
 
-## Interview use
+A small workshop could compare the same search context across those language choices and help decide what should be translated and what should stay in English.
 
-This map should be used to show **how** the market would be approached, not to claim relationships that do not exist:
+## How I would approach any community
 
-> “I would start with communities that already show hands-on AI/data behavior, offer a technical experiment that fits their existing interests, measure activation and repeated questions, and only then scale into sponsorship or recurring partnership. Iraq gives me a low-cost in-person starting point; Saudi, Egypt and Morocco need locally appropriate channel tests instead of one pan-Arab campaign.”
+I would keep the first step small:
 
-## Sources checked 4 Oct 2026
+1. Talk to organizers and developers.
+2. Offer something useful, such as a guide, example, or workshop.
+3. See whether people actually use it.
+4. Repeat it only if there is real interest.
+
+I would not start with sponsorship.
+
+## Sources
 
 - Iraqi Programmers Syndicate: https://www.ips-iq.org/
 - GDG Cloud Saudi: https://gdg.community.dev/gdg-cloud-saudi/

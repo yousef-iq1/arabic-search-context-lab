@@ -10,7 +10,7 @@ This is an **independent localization sample**, not an official SerpApi translat
 2. Use Modern Standard Arabic for reusable regional documentation.
 3. Keep familiar developer terms such as API, JSON, HTML, Markdown, cache and SDK when translating them would make the documentation harder to scan.
 4. Translate the **behavior**, not the syntax.
-5. Make distinctions explicit when an English term can be misunderstood in Arabic. For example, `hl` is best explained as the Google interface language/locale instead of simply “لغة النتائج”.
+5. Make distinctions explicit when an English term can be misunderstood in Arabic. For example, `hl` is best explained as the Google interface language/locale instead of simply "لغة النتائج".
 6. Use an example from an Arabic-speaking market so the reader can immediately connect the parameter to a real use case.
 
 ## Localized parameter sample
@@ -29,7 +29,7 @@ This is an **independent localization sample**, not an official SerpApi translat
 ### `hl` - اختياري
 يحدد لغة/locale واجهة Google المستخدمة في البحث. يمكن أن تكون القيمة رمز لغة مثل `ar` أو قيمة مرتبطة بمنطقة مثل `ar-iq` للعربية في العراق.
 
-أتعمد عدم تسميته “لغة النتائج” لأن ذلك قد يوحي بأنه يفلتر صفحات النتائج إلى لغة واحدة. عندما يريد المطور تقييد لغات النتائج، يوجد `lr` كمدخل منفصل.
+أتعمد عدم تسميته "لغة النتائج" لأن ذلك قد يوحي بأنه يفلتر صفحات النتائج إلى لغة واحدة. عندما يريد المطور تقييد لغات النتائج، يوجد `lr` كمدخل منفصل.
 
 ### `async` - اختياري
 - `false` (الافتراضي): يبقى اتصال HTTP مفتوحًا إلى أن تجهز النتيجة.
@@ -64,8 +64,8 @@ const result = await getJson({
 
 | Developer concept | Arabic treatment | Reason |
 |---|---|---|
-| API | API / واجهة برمجة التطبيقات عند أول ذكر فقط | Developers scan “API” faster |
-| locale | locale + شرح عربي | More precise than reducing it to “language” |
+| API | API / واجهة برمجة التطبيقات عند أول ذكر فقط | Developers scan "API" faster |
+| locale | locale + شرح عربي | More precise than reducing it to "language" |
 | cache | cache / التخزين المؤقت | Common developer term; explain behavior once |
 | server-side | server-side / على الخادم | Keeps framework/security language recognizable |
 | Search Archive API | Keep product name | It is a named SerpApi API |
