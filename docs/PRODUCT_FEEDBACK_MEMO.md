@@ -1,122 +1,102 @@
-# Product & Documentation Feedback Memo
+# Product and Documentation Notes
 
-**Context:** observations from building Arabic Search Context Lab as a new SerpApi user with Next.js + TypeScript.
+**Context:** I wrote these notes while building Arabic Search Context Lab with Next.js and TypeScript.
 
-**Intent:** this is not a bug report and it does not claim to represent broad customer research. It separates first-hand observations from hypotheses that would need user validation.
+They describe my own experience. They are not a bug report and they do not represent broad customer research.
 
-## Executive summary
+## Short version
 
-The core API was straightforward to discover and the Playground made the first successful request easy. The main friction appeared after the first request: understanding localization as three separate controls, designing around a slow search, and translating SerpApi's secure server-side guidance into a modern Next.js application pattern.
+The first request was easy to make in the Playground. The harder parts came after that:
 
-The highest-value documentation opportunity I see is an opinionated guide for localized, browser-facing apps: city-level `location` + `gl` + `hl`, server-side secret handling, and async search retrieval in one end-to-end example.
+- understanding the difference between `location`, `gl`, and `hl`;
+- deciding what to do when a search takes a long time;
+- applying the API-key guidance in a current Next.js app.
 
-## 1. Localization mental model
+The docs idea I would test first is one complete example that puts those three topics in the same place.
 
-### Observation
+## 1. location, gl, and hl
 
-`location`, `gl`, and `hl` are individually documented, but a new developer can still read them as overlapping variants of the same idea.
+### What happened
 
-In the Arabic-market experiment, I needed to reason about them separately:
+The three values are documented separately, but at first they can look like different versions of the same setting.
 
-- `location` = simulated geographic origin;
-- `gl` = country bias;
-- `hl` = Google interface language / locale.
+For this project I treated them as:
 
-### Why this matters
+- `location`: city-level search location;
+- `gl`: country bias;
+- `hl`: Google interface language and locale.
 
-For a regional product, choosing only an Arabic `hl` value is not the same as choosing an Iraqi, Saudi, Egyptian, or Moroccan search context. This distinction is easy to miss if the developer starts from a language requirement rather than from search infrastructure.
+### What I would try
 
-### Suggestion
+Add a small example that runs one query in two countries and shows all three values side by side.
 
-Add a small “localized search recipe” to Google Search API docs with one query shown across two countries, explicitly explaining why all three inputs exist.
+An Arabic example would be useful because Arabic is used across many country contexts.
 
-An Arabic example would be particularly useful because one language spans many country contexts.
+## 2. Async search in TypeScript
 
-## 2. Async search ergonomics
+### What happened
 
-### Observation
+One Baghdad test took about 33 seconds. `async=true` and Search Archive gave me the pieces I needed, but I still had to decide:
 
-A real Baghdad request during testing took roughly 33 seconds end-to-end. The documented `async=true` + Search Archive pattern solved the architecture problem well.
+- how often to check;
+- when to stop;
+- which statuses count as finished;
+- what to show if one city finishes before another.
 
-### Friction
+### What I would try
 
-The JavaScript SDK gives the primitives (`getJson`, search ID, `getJsonBySearchId`), but the developer still has to design retry cadence, terminal states, timeout behavior, and partial UI states.
+Add a small TypeScript example that submits a search, checks the status with a retry limit, and returns either a result or a clear error.
 
-### Suggestion
+## 3. Next.js server example
 
-Add a compact TypeScript helper/example for:
+### What happened
 
-1. submit;
-2. poll with bounded retries/backoff;
-3. distinguish `Queued`, `Processing`, `Success`, and error;
-4. return a typed result.
+The security docs are clear that the API key should not be exposed in browser code.
 
-This would be especially useful for browser-facing products where keeping one HTTP request open is undesirable.
+### What I would try
 
-## 3. Modern Next.js server-side example
+Add a current App Router example that shows:
 
-### Observation
-
-SerpApi's CORS guidance correctly prevents browser-side API-key exposure, and the security guide clearly recommends environment variables.
-
-### Opportunity
-
-A current Next.js App Router example would connect those two pieces for a large JavaScript audience:
-
-- Route Handler;
+- a Route Handler;
 - `process.env.SERPAPI_KEY`;
-- client calls only the first-party route;
-- optional Zod validation;
-- no key in `NEXT_PUBLIC_*` variables.
+- client code calling only the app's own route;
+- optional input validation;
+- no secret in `NEXT_PUBLIC_*`.
 
-### Why it matters
+That would make the server/client boundary easy to copy correctly.
 
-Many frontend-oriented developers understand “don't expose the key” but still benefit from seeing the correct modern framework boundary implemented once.
+## 4. Country and locale lookup
 
-## 4. Locale discoverability
+### What happened
 
-### Observation
+A developer may start with “I need results for Iraq” instead of starting with `hl` or `location`.
 
-Values such as `ar-iq`, `ar-sa`, `ar-eg`, and `ar-ma` work for the language parameter, and city-level locations are available for Baghdad, Riyadh, Cairo, and Casablanca.
+### What I would try
 
-### Opportunity
+Link the country, language, and location lookups more closely from the Google Search API page, or add a tiny country-to-parameter table.
 
-For developers who begin with a market name (“Iraq” or “Saudi Arabia”) rather than a parameter name (`hl`), the supported locale/location discovery path could be easier to find from the main Google Search API page.
+## 5. Public demos and quota
 
-### Suggestion
+### What happened
 
-Cross-link location and locale lookup more prominently from the localization parameter descriptions, or provide a tiny market-to-parameter example table.
+A public portfolio can turn every visitor into a live API request.
 
-## 5. Public demos and quota safety
+### What I did here
 
-### Observation
+The public site reads saved SerpApi results, and live mode stays available on the server for testing.
 
-A public portfolio/demo can unintentionally turn every visitor into a paid/live API request.
+### What I would try
 
-### Pattern used in this project
-
-The public version is designed to show timestamped real snapshots while keeping live mode available server-side for controlled demos.
-
-### Possible documentation addition
-
-A short “building a public demo” note could mention caching and saved/example results, especially for free-tier developers who want to publish tutorials or hackathon projects without burning quota.
+Add a short note for tutorials, portfolios, and hackathon projects about caching or saved results.
 
 ## What worked well
 
-- Playground made the first localized search easy to inspect.
-- Structured JSON exposed enough metadata to verify what context was actually used.
-- The official JavaScript/TypeScript SDK fit naturally into a Next.js server runtime.
-- Search IDs + archive retrieval gave a clean solution for slower requests.
-- Security guidance is explicit that keys do not belong in browser code.
+- The Playground made the first localized request easy to inspect.
+- The response includes enough metadata to check the settings that were used.
+- The JavaScript/TypeScript SDK fit cleanly into a Next.js server route.
+- Search IDs and Search Archive gave me a workable path for slow searches.
+- The security docs are clear about keeping the key off the client.
 
-## What I would validate before treating these as roadmap priorities
+## What I would check before recommending changes
 
-This memo is based on one developer's build experience. Before changing product/docs, I would check:
-
-- support tickets mentioning confusion between `location`, `gl`, and `hl`;
-- how often frontend/Next.js/CORS questions appear;
-- how many searches have latency high enough that developers benefit from async examples;
-- whether regional Developer Advocates hear similar localization questions;
-- whether hackathon/demo users report quota surprises.
-
-That validation step matters: first-hand friction is useful input, but it is not automatically representative user research.
+I would look at support tickets, common developer questions, search timing data, and feedback from more users. My experience is useful input, but it is still one developer's experience.

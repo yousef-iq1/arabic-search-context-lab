@@ -27,4 +27,4 @@ For a one-time trusted capture, set `SERPAPI_CAPTURE_ON_BUILD=true` alongside th
 
 After the normalized log output is reviewed and committed here, return `SERPAPI_CAPTURE_ON_BUILD` to `false`.
 
-This is intentionally a maintainer-only capture workflow rather than a public endpoint, so public visitors cannot consume the account quota.
+This is intentionally a maintainer-only capture workflow instead of a public endpoint, so public visitors cannot consume the account quota.

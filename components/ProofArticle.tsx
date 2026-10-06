@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export function ProofArticle({
+export function WorkArticle({
   eyebrow,
   title,
   intro,
@@ -20,7 +20,7 @@ export function ProofArticle({
         <div className="subpageHeaderInner">
           <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
           <nav className="articleTopActions" aria-label="Project navigation">
-            <Link className="subpageGhost" href="/proof">Proof</Link>
+            <Link className="subpageGhost" href="/work">Work</Link>
             <Link className="subpageAction compactHeaderAction" href="/">Demo</Link>
           </nav>
         </div>

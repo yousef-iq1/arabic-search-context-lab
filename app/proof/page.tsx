@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 const items = [
-  { title: "Arabic technical walkthrough", type: "Speaking", status: "Recorded · 1:29", text: "A real Arabic-voice walkthrough of the product, localization inputs, and the engineering decisions behind the demo.", href: "/walkthrough" },
-  { title: "Public GitHub repository", type: "Source", status: "Public", text: "Standalone source with setup, architecture notes, real snapshots, and the server-side SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
-  { title: "Public source tour", type: "Engineering", status: "Published", text: "A focused walkthrough of localization inputs, secret handling, async search, partial failure, and public snapshot design.", href: "/source" },
-  { title: "Arabic documentation localization", type: "Localization", status: "Published", text: "A parameter-level Arabic sample covering location, country bias, locale, async search, caching, and output formats.", href: "/localization" },
-  { title: "Arabic Search Context Lab", type: "Product", status: "12 real snapshots", text: "Three curated Arabic intents across Baghdad, Riyadh, Cairo, and Casablanca using explicit localization parameters.", href: "/" },
-  { title: "Arabic technical tutorial", type: "Education", status: "Published", text: "Arabic guidance for location/gl, hl, server-side keys, async search, Search Archive polling, and quota-safe demos.", href: "/guide" },
-  { title: "Product & documentation feedback", type: "Feedback", status: "Published", text: "First-hand friction and documentation opportunities separated from hypotheses that need broader validation.", href: "/feedback" },
-  { title: "Arabic market 30/60/90 plan", type: "Strategy", status: "Published", text: "A measured plan for developer education, community learning, partnerships, feedback, and qualified adoption.", href: "/plan" },
+  { title: "Arabic technical walkthrough", type: "Video", status: "1:29", text: "A short Arabic walkthrough of the demo, the localization settings, and the main engineering choices.", href: "/walkthrough" },
+  { title: "Public GitHub repository", type: "Code", status: "Public", text: "Source code, setup notes, saved search results, and the SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
+  { title: "How the project is built", type: "Engineering", status: "Page", text: "Server-side key handling, localization settings, async search, per-city result handling, and saved results.", href: "/source" },
+  { title: "Arabic localization sample", type: "Localization", status: "Page", text: "A small Arabic docs sample for location, gl, hl, async search, cache, and output formats.", href: "/localization" },
+  { title: "Arabic Search Context Lab", type: "Project", status: "12 captures", text: "Three Arabic searches across Baghdad, Riyadh, Cairo, and Casablanca.", href: "/" },
+  { title: "Arabic technical guide", type: "Writing", status: "Page", text: "Arabic notes on location, gl, hl, server-side keys, async search, Search Archive, and the public demo setup.", href: "/guide" },
+  { title: "Product and docs notes", type: "Feedback", status: "Page", text: "What was easy, where I got stuck, and a few changes I would check with more developers.", href: "/feedback" },
+  { title: "Arabic market 30/60/90 plan", type: "Plan", status: "Page", text: "A practical first-90-days plan for developer content, community work, feedback, and growth.", href: "/plan" },
 ];
 
 function InfoIcon() {
@@ -32,15 +32,14 @@ export default function ProofPage() {
 
       <section className="proofLead proofLeadCompact">
         <div className="proofTitleRow">
-          <h1>Proof of fit.</h1>
+          <h1>Work I did for this role.</h1>
           <details className="miniInfo proofTruthInfo">
-            <summary aria-label="Truth boundary" title="Truth boundary"><InfoIcon /></summary>
+            <summary aria-label="About this project" title="About this project"><InfoIcon /></summary>
             <div>
-              Independent project. No SerpApi affiliation, borrowed title, or invented community work.
+              I built this independently. I do not work for SerpApi, and SerpApi did not ask me to build it.
             </div>
           </details>
         </div>
-        <p>Product. Engineering. Arabic content. Localization. Market strategy.</p>
       </section>
 
       <section className="evidenceGrid">

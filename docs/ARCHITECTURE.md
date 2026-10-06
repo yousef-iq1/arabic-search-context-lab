@@ -1,77 +1,70 @@
-# Architecture Notes — Arabic Search Context Lab
+# Architecture Notes: Arabic Search Context Lab
 
-Arabic Search Context Lab is deliberately small. Its purpose is not to imitate a search engine; it demonstrates one developer-relations idea clearly: the same Arabic search intent can produce different structured results when geographic origin, country bias, and Google interface language change.
+Arabic Search Context Lab is a small project with one main job: run the same Arabic search in several cities while keeping the location settings easy to inspect.
 
-## Product goal
+## Cities
 
-Help an Arabic-speaking developer understand, by inspection rather than by marketing copy, how SerpApi localization inputs affect search context.
+- Baghdad, Iraq
+- Riyadh, Saudi Arabia
+- Cairo, Egypt
+- Casablanca, Morocco
 
-## Why these four markets
+I chose four different Arabic-speaking cities for the demo. They are examples, not a claim that four cities represent the whole Arabic-speaking region.
 
-- Baghdad — Iraq
-- Riyadh — Saudi Arabia
-- Cairo — Egypt
-- Casablanca — Morocco
+## Request settings
 
-They give the demo four distinct Arabic-speaking contexts across the Gulf, Mashriq, and Maghreb without pretending that four cities represent the entire Arabic-speaking world.
+The text of the query stays the same. The server changes three values for each city:
 
-## Request model
+- `location`: city-level search location
+- `gl`: Google country bias
+- `hl`: Google interface language and locale
 
-For every selected market, the server sends the same Arabic query but changes three explicit inputs:
+Keeping those values separate makes it easier to see which part of the request changed.
 
-- `location` — simulated geographic origin at city level
-- `gl` — Google country bias
-- `hl` — Google interface language / locale
+## API key
 
-The project intentionally keeps the query itself constant. That isolates context as the variable being demonstrated.
+The SerpApi key stays on the server. The browser calls this Next.js app, and the server calls SerpApi. `SERPAPI_KEY` comes from the server environment and is never sent to client code.
 
-## Why server-side only
+## Slow searches
 
-SerpApi does not support calling the API directly from browser code because that would expose the private API key. The browser therefore calls this Next.js application's own API routes, and only the server communicates with SerpApi. `SERPAPI_KEY` is read from the server environment and is never serialized into client props or source code.
+One Baghdad test took about 33 seconds. That was long enough to change the live-search flow.
 
-## Why async submission + polling
+Live mode submits with `async=true`, receives a search ID, and then checks Search Archive through the app's status route. Each city is handled separately, so a slow or failed city does not remove results that already finished.
 
-During product bootcamp testing, a real Baghdad search took roughly 33 seconds end-to-end. Treating every search as instant would create a fragile UX and a long-lived browser request. Live mode therefore submits searches with `async=true`, stores the returned search IDs in the browser, and polls this application's status endpoint, which retrieves completed results through SerpApi's Search Archive flow.
+## Public site
 
-This design also allows individual markets to complete independently. A slow or failed search does not erase successful markets.
+The public site uses saved SerpApi results because I do not want every portfolio visit to spend API quota.
 
-## Public snapshot mode
+Rules for saved results:
 
-The free SerpApi account has a limited monthly quota. A recruiter opening a portfolio should not consume live searches on every page load. Production therefore defaults to snapshot mode.
+1. Each file must come from a SerpApi response.
+2. Keep the capture time.
+3. Label the result as saved, not live.
+4. Do not create fake search results.
+5. Keep live mode available on the server for testing.
 
-Snapshot rules:
+## Errors and retries
 
-1. Every snapshot must come from a real SerpApi response.
-2. The original capture timestamp is retained.
-3. The UI labels the result as `snapshot` rather than `live`.
-4. Fabricated search results are never used.
-5. Live mode exists in source and can be enabled server-side for controlled demonstrations.
+Each city keeps its own status. The polling loop stops after a fixed retry limit, and the UI shows a city-specific error instead of exposing raw backend details.
 
-## Failure model
+## What I left out
 
-The app is designed around partial success:
+The project does not have accounts, billing, saved searches, chat features, social features, or open-ended public search. Those features would make the app larger without helping the comparison.
 
-- one market can succeed while another is still processing;
-- one market can fail without discarding the rest;
-- status polling has a bounded retry window;
-- user-facing messages avoid leaking secrets or raw backend errors.
+## Why this project is in my application
 
-## Scope deliberately excluded
+It gave me a way to use SerpApi before applying, write down what I learned, and show both the code and the explanation. The parts most relevant to the role are:
 
-The project does not include authentication, saved searches, billing, social features, a chatbot, arbitrary public free-text search, or analytics dashboards. Those features would expand engineering surface area without strengthening the core evidence this project is meant to provide.
+- using the API in a working project;
+- explaining localization in Arabic and English;
+- keeping credentials on the server;
+- changing the design after seeing a slow request;
+- writing product/docs notes after using the product;
+- keeping the scope small enough to explain clearly.
 
-## What this demonstrates in a Developer Advocate application
-
-- practical use of SerpApi rather than superficial name-dropping;
-- Arabic/English product thinking and RTL/LTR implementation;
-- ability to turn an API behavior into an educational developer experience;
-- security awareness around API credentials;
-- product feedback: a real latency observation changed the architecture;
-- disciplined scope and written technical reasoning.
-
-## Sources used while designing the integration
+## References
 
 - SerpApi Google Search API documentation
 - SerpApi JavaScript/TypeScript SDK documentation
 - SerpApi Search Archive API documentation
-- SerpApi guidance on frontend/CORS and API-key handling
+- SerpApi frontend/CORS and API-key guidance

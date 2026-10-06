@@ -206,11 +206,11 @@ export function ContextLab() {
           <h1>{isAr ? "نفس البحث. سياق مختلف." : "Same search. Different context."}</h1>
           <p>
             {isAr
-              ? "SerpApi تحوّل نتائج البحث إلى بيانات منظّمة للتطبيقات. هنا نقارن نفس النية العربية بين أربع مدن."
-              : "SerpApi turns search results into structured data for software. Here, the same Arabic intent is compared across four cities."}
+              ? "هذا المشروع يشغّل نفس البحث العربي في بغداد والرياض والقاهرة والدار البيضاء باستخدام SerpApi، ثم يقارن النتائج."
+              : "This demo runs the same Arabic search in Baghdad, Riyadh, Cairo, and Casablanca with SerpApi, then compares the results."}
           </p>
           <div className="heroPrimaryActions">
-            <Link className="roleProofCta" href="/proof">
+            <Link className="roleWorkCta" href="/work">
               {isAr ? "ليش أنا مناسب للدور" : "Why I’m a fit"}
               <span aria-hidden="true">↗</span>
             </Link>
@@ -279,15 +279,15 @@ export function ContextLab() {
         </div>
 
         <div className="controlMeta">
-          <span className="snapshotBadge">{isAr ? "12 لقطة حقيقية" : "12 real snapshots"}</span>
+          <span className="snapshotBadge">{isAr ? "12 نتيجة محفوظة من SerpApi" : "12 saved SerpApi results"}</span>
           <details className="miniInfo">
             <summary aria-label={isAr ? "عن وضع البيانات" : "About data mode"} title={isAr ? "عن وضع البيانات" : "About data mode"}>
               <InfoIcon />
             </summary>
             <div>
               {isAr
-                ? "النسخة العامة تستخدم لقطات SerpApi حقيقية محفوظة حتى لا يستهلك كل زائر حصة API. المفتاح يبقى على الخادم فقط."
-                : "The public demo uses real saved SerpApi captures so each visitor does not consume API quota. The key stays server-side."}
+                ? "الموقع العام يقرأ نتائج SerpApi محفوظة حتى لا يستهلك كل زائر حصة API. المفتاح يبقى على الخادم."
+                : "The public site reads saved SerpApi results so each visitor does not spend API quota. The key stays on the server."}
             </div>
           </details>
         </div>
@@ -339,7 +339,7 @@ export function ContextLab() {
             <div className="compareFacts">
               <Fact
                 label={isAr ? "نطاقات مشتركة" : "Shared domains"}
-                value={payload.comparison.sharedDomains.join(", ") || "—"}
+                value={payload.comparison.sharedDomains.join(", ") || (isAr ? "لا يوجد" : "None")}
               />
               <Fact label="location" value="geographic origin" />
               <Fact label="gl" value="country bias" />
@@ -420,7 +420,7 @@ function MarketCard({
                 <InfoIcon />
               </summary>
               <div className="cardPopover">
-                <strong>{isAr ? "لقطة SerpApi حقيقية" : "Real SerpApi capture"}</strong>
+                <strong>{isAr ? "نتيجة محفوظة من SerpApi" : "Saved SerpApi result"}</strong>
                 <span>{formatCapturedAt(result.capturedAt, isAr ? "ar-IQ" : "en")}</span>
                 <span>{result.metadata.hl ?? market.hl} · {result.metadata.gl ?? market.gl}</span>
               </div>

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Arabic Technical Walkthrough | Arabic Search Context Lab",
+  title: "Arabic Project Walkthrough | Arabic Search Context Lab",
   description:
-    "A 1:29 Arabic walkthrough of the SerpApi-powered search-context demo, localization choices, and engineering decisions.",
+    "A 1:29 Arabic walkthrough of Arabic Search Context Lab, including the four-city comparison, localization settings, and async search setup.",
   openGraph: {
-    title: "Arabic Technical Walkthrough",
+    title: "Arabic Project Walkthrough",
     description:
-      "A short Arabic walkthrough of the product, localization choices, and engineering decisions behind Arabic Search Context Lab.",
+      "A short Arabic walkthrough of Arabic Search Context Lab.",
     images: ["https://arabic-search-context-lab-prod.onrender.com/walkthrough-poster.jpg"],
   },
 };
@@ -31,7 +31,7 @@ export default function WalkthroughPage() {
         <div className="subpageHeaderInner">
           <Link className="brand brandStrong" href="/">Arabic Search Context Lab</Link>
           <nav className="articleTopActions" aria-label="Project navigation">
-            <Link className="subpageGhost" href="/proof">Proof</Link>
+            <Link className="subpageGhost" href="/proof">Work</Link>
             <Link className="subpageAction compactHeaderAction" href="/">Demo</Link>
           </nav>
         </div>
@@ -39,22 +39,23 @@ export default function WalkthroughPage() {
 
       <section className="walkthroughHero">
         <div>
-          <h1>Arabic technical walkthrough.</h1>
+          <h1>Arabic project walkthrough.</h1>
           <p>
-            A short, real explanation of the product, localization choices, and
-            engineering decisions behind the demo.
+            I recorded this after finishing the project. In 1:29, I show the
+            four-city comparison, the localization settings, and the async
+            search setup.
           </p>
         </div>
       </section>
 
-      <section className="walkthroughStage" aria-label="Arabic technical walkthrough video">
+      <section className="walkthroughStage" aria-label="Arabic project walkthrough video">
         <div className="walkthroughVideoFrame">
           <video
             controls
             playsInline
             preload="metadata"
             poster={POSTER_URL}
-            aria-label="Arabic Search Context Lab technical walkthrough in Arabic"
+            aria-label="Arabic Search Context Lab walkthrough in Arabic"
           >
             <source src={VIDEO_URL} type="video/mp4" />
             Your browser does not support HTML video.
@@ -62,31 +63,31 @@ export default function WalkthroughPage() {
         </div>
       </section>
 
-      <section className="walkthroughFacts" aria-label="Walkthrough coverage">
+      <section className="walkthroughFacts" aria-label="What the video covers">
         <article>
           <span>Product</span>
-          <strong>Same intent, four markets.</strong>
-          <p>Baghdad, Riyadh, Cairo, and Casablanca in one controlled comparison.</p>
+          <strong>One query in four cities.</strong>
+          <p>The same Arabic search runs in Baghdad, Riyadh, Cairo, and Casablanca.</p>
         </article>
         <article>
           <span>Localization</span>
-          <strong>location · gl · hl</strong>
-          <p>The search context is explicit, not reduced to translation or RTL.</p>
+          <strong>location, gl, hl</strong>
+          <p>Each setting stays separate so it is clear what changes between cities.</p>
         </article>
         <article>
           <span>Engineering</span>
-          <strong>Server-side · async · snapshots</strong>
-          <p>Key protection, slow-search handling, and quota-safe public evidence.</p>
+          <strong>Server-side key and async search</strong>
+          <p>The API key stays on the server, and slow searches use async mode and Search Archive.</p>
         </article>
       </section>
 
       <section className="walkthroughNext">
         <div>
-          <span>Want the evidence behind the walkthrough?</span>
-          <strong>Open the complete proof pack.</strong>
+          <span>See the rest of the work</span>
+          <strong>Code, notes, docs, and the 30/60/90 plan.</strong>
         </div>
         <Link className="walkthroughProofLink" href="/proof">
-          Proof of fit <ArrowIcon />
+          Open project work <ArrowIcon />
         </Link>
       </section>
     </main>
