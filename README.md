@@ -17,6 +17,7 @@ It is built with **Next.js, TypeScript, and SerpApi** and currently compares fou
 
 - Demo: https://arabic-search-context-lab-prod.onrender.com
 - Proof index: https://arabic-search-context-lab-prod.onrender.com/proof
+- Arabic technical walkthrough: https://arabic-search-context-lab-prod.onrender.com/walkthrough
 - Arabic technical guide: https://arabic-search-context-lab-prod.onrender.com/guide
 - Localization sample: https://arabic-search-context-lab-prod.onrender.com/localization
 - Product/docs feedback: https://arabic-search-context-lab-prod.onrender.com/feedback
