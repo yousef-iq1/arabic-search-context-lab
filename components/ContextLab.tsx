@@ -212,7 +212,6 @@ export function ContextLab() {
           <div className="heroPrimaryActions">
             <Link className="roleProofCta" href="/proof">
               {isAr ? "ليش أنا مناسب للدور" : "Why I’m a fit"}
-              <span aria-hidden="true">↗</span>
             </Link>
             <Link className="sourceTextLink" href="/source">
               {isAr ? "كيف بنيته" : "How it’s built"}
@@ -253,7 +252,7 @@ export function ContextLab() {
             <span className="queryChevron" aria-hidden="true">⌄</span>
           </div>
           <button className="run compactRun" disabled={loading} onClick={runComparison}>
-            {loading ? (isAr ? "نقارن…" : "Comparing…") : (isAr ? "قارن" : "Compare")}
+            {loading ? (isAr ? "نقارن..." : "Comparing...") : (isAr ? "قارن" : "Compare")}
           </button>
         </div>
 
@@ -333,7 +332,7 @@ export function ContextLab() {
               <CodeIcon />
               {isAr ? "تفاصيل المطور" : "Developer details"}
             </span>
-            <small>location · gl · hl</small>
+            <small>location / gl / hl</small>
           </summary>
           <div className="devDrawerBody">
             <div className="compareFacts">
@@ -379,7 +378,7 @@ function MarketCard({
       </div>
 
       {loading && !result ? (
-        <div className="skeleton">{isAr ? "بانتظار النتيجة…" : "Waiting…"}</div>
+        <div className="skeleton">{isAr ? "بانتظار النتيجة..." : "Waiting..."}</div>
       ) : null}
 
       {!loading && !result ? (
@@ -422,7 +421,7 @@ function MarketCard({
               <div className="cardPopover">
                 <strong>{isAr ? "نتيجة محفوظة من SerpApi" : "Saved SerpApi result"}</strong>
                 <span>{formatCapturedAt(result.capturedAt, isAr ? "ar-IQ" : "en")}</span>
-                <span>{result.metadata.hl ?? market.hl} · {result.metadata.gl ?? market.gl}</span>
+                <span>{result.metadata.hl ?? market.hl} / {result.metadata.gl ?? market.gl}</span>
               </div>
             </details>
           </div>

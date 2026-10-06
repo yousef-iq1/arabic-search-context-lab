@@ -1,10 +1,10 @@
-# SerpApi Google Search API: Arabic Localization Sample
+# Arabic localization notes
 
-**Purpose:** show a small Arabic docs sample while keeping code names and familiar technical terms unchanged.
+I wrote this sample to show how I would explain a few SerpApi settings in Arabic.
 
-This is an **independent localization sample**, not an official SerpApi translation.
+It is my own sample, not an official SerpApi translation.
 
-## Localization principles
+## What I keep consistent
 
 1. Keep parameter names and code values exactly as the API expects: `location`, `gl`, `hl`, `async`, `no_cache`, `output`.
 2. Use Modern Standard Arabic for reusable regional documentation.
@@ -45,7 +45,7 @@ This is an **independent localization sample**, not an official SerpApi translat
 - `html` - HTML الخام.
 - `md` - Markdown مهيأ لاستخدامات LLMs وAI agents.
 
-## Mini Arabic quick-start
+## Quick example
 
 ```ts
 import { getJson } from "serpapi";
@@ -60,7 +60,7 @@ const result = await getJson({
 });
 ```
 
-## Terminology decisions
+## Terms I would keep familiar
 
 | Developer concept | Arabic treatment | Reason |
 |---|---|---|
@@ -72,6 +72,6 @@ const result = await getJson({
 | country bias | انحياز الدولة | Distinguishes `gl` from `location` |
 | interface language | لغة واجهة Google | Avoids confusing `hl` with language filtering |
 
-## Validation boundary
+## If this were published for users
 
-If this became production documentation, I would review the terms with developers from several Arabic-speaking markets and keep one shared glossary across docs, pages, video captions, and support.
+Before publishing this for users, I would review the wording with developers from several Arabic-speaking markets and keep the same terms across docs, pages, video captions, and support.

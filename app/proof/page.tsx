@@ -53,9 +53,9 @@ export default function ProofPage() {
             <h2>{item.title}</h2>
             <p>{item.text}</p>
             {item.href.startsWith("/") ? (
-              <Link className="evidenceLink" href={item.href}>Open <span>↗</span></Link>
+              <Link className="evidenceLink" href={item.href}>Open </Link>
             ) : (
-              <a className="evidenceLink" href={item.href} target="_blank" rel="noreferrer">Open <span>↗</span></a>
+              <a className="evidenceLink" href={item.href} target="_blank" rel="noreferrer">Open </a>
             )}
           </article>
         ))}
