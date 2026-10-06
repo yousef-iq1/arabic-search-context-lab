@@ -1,4 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Project Notes | Arabic Search Context Lab",
+  description:
+    "The project, code, Arabic guide, localization notes, API/docs feedback, and walkthrough behind Arabic Search Context Lab.",
+  openGraph: {
+    title: "Arabic Search Context Lab",
+    description:
+      "A SerpApi project comparing the same Arabic search across Baghdad, Riyadh, Cairo and Casablanca.",
+    url: "https://arabic-search-context-lab-prod.onrender.com/proof",
+    images: ["/walkthrough-poster.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arabic Search Context Lab",
+    description:
+      "A SerpApi project comparing the same Arabic search across four cities.",
+    images: ["/walkthrough-poster.jpg"],
+  },
+};
 
 const items = [
   { title: "Arabic technical walkthrough", type: "Video", status: "1:29", text: "I recorded a short Arabic walkthrough of the demo, the localization settings, and the main engineering choices.", href: "/walkthrough" },
