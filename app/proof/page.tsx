@@ -1,14 +1,15 @@
 import Link from "next/link";
 
+const walkthroughUrl = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough";
+
 const items = [
   { title: "Public GitHub repository", type: "Source", status: "Public", text: "Standalone source with setup, architecture notes, real snapshots, and the server-side SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
   { title: "Public source tour", type: "Engineering", status: "Published", text: "A focused walkthrough of localization inputs, secret handling, async search, partial failure, and public snapshot design.", href: "/source" },
   { title: "Arabic documentation localization", type: "Localization", status: "Published", text: "A parameter-level Arabic sample covering location, country bias, locale, async search, caching, and output formats.", href: "/localization" },
   { title: "Arabic Search Context Lab", type: "Product", status: "12 real snapshots", text: "Three curated Arabic intents across Baghdad, Riyadh, Cairo, and Casablanca using explicit localization parameters.", href: "/" },
-  { title: "Arabic technical tutorial", type: "Education", status: "Published", text: "Arabic guidance for location/gl/hl, server-side keys, async search, Search Archive polling, and quota-safe demos.", href: "/guide" },
+  { title: "Arabic technical tutorial", type: "Education", status: "Published", text: "Arabic guidance for location/gl, hl, server-side keys, async search, Search Archive polling, and quota-safe demos.", href: "/guide" },
   { title: "Product & documentation feedback", type: "Feedback", status: "Published", text: "First-hand friction and documentation opportunities separated from hypotheses that need broader validation.", href: "/feedback" },
   { title: "Arabic market 30/60/90 plan", type: "Strategy", status: "Published", text: "A measured plan for developer education, community learning, partnerships, feedback, and qualified adoption.", href: "/plan" },
-  { title: "Arabic walkthrough", type: "Speaking", status: "Pending", text: "A concise technical walkthrough will be published only after the real human recording is complete.", href: null },
 ];
 
 function InfoIcon() {
@@ -52,17 +53,31 @@ export default function ProofPage() {
             </div>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
-            {item.href ? (
-              item.href.startsWith("/") ? (
-                <Link className="evidenceLink" href={item.href}>Open <span>↗</span></Link>
-              ) : (
-                <a className="evidenceLink" href={item.href} target="_blank" rel="noreferrer">Open <span>↗</span></a>
-              )
+            {item.href.startsWith("/") ? (
+              <Link className="evidenceLink" href={item.href}>Open <span>↗</span></Link>
             ) : (
-              <span className="evidencePending">Pending human recording</span>
+              <a className="evidenceLink" href={item.href} target="_blank" rel="noreferrer">Open <span>↗</span></a>
             )}
           </article>
         ))}
+
+        <article className="evidenceCard">
+          <div className="evidenceMeta">
+            <span>Speaking</span>
+            <span>Recorded</span>
+          </div>
+          <h2>Arabic walkthrough</h2>
+          <p>A concise human-recorded technical walkthrough of the project, localization behavior, implementation details, and role-fit proof.</p>
+          <a className="evidenceLink" href={walkthroughUrl} target="_blank" rel="noreferrer">Watch walkthrough <span>↗</span></a>
+          <video
+            className="proofVideo"
+            controls
+            preload="metadata"
+            playsInline
+            src={walkthroughUrl}
+            style={{ width: "100%", marginTop: "18px", borderRadius: "14px", display: "block" }}
+          />
+        </article>
       </section>
     </main>
   );
