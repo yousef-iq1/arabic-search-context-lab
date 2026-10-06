@@ -1,0 +1,39 @@
+name: Publish walkthrough media
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-walkthrough-media.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download optimized walkthrough media
+        run: |
+          mkdir -p public
+          curl --fail --location --retry 3 --output public/walkthrough.mp4 "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough"
+          curl --fail --location --retry 3 --output public/walkthrough-poster.jpg "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster"
+          test -s public/walkthrough.mp4
+          test -s public/walkthrough-poster.jpg
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 public/walkthrough.mp4
+
+      - name: Commit media into the site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/walkthrough.mp4 public/walkthrough-poster.jpg
+          if git diff --cached --quiet; then
+            echo "Walkthrough media already present."
+            exit 0
+          fi
+          git commit -m "Add self-hosted walkthrough media"
+          git push
