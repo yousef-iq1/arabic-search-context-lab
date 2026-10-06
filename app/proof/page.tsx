@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-const walkthroughUrl = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough";
-
 const items = [
   { title: "Arabic technical walkthrough", type: "Speaking", status: "Recorded · 1:29", text: "A real Arabic-voice walkthrough of the product, localization inputs, and the engineering decisions behind the demo.", href: "/walkthrough" },
   { title: "Public GitHub repository", type: "Source", status: "Public", text: "Standalone source with setup, architecture notes, real snapshots, and the server-side SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
@@ -61,24 +59,6 @@ export default function ProofPage() {
             )}
           </article>
         ))}
-
-        <article className="evidenceCard">
-          <div className="evidenceMeta">
-            <span>Speaking</span>
-            <span>Recorded</span>
-          </div>
-          <h2>Arabic walkthrough</h2>
-          <p>A concise human-recorded technical walkthrough of the project, localization behavior, implementation details, and role-fit proof.</p>
-          <a className="evidenceLink" href={walkthroughUrl} target="_blank" rel="noreferrer">Watch walkthrough <span>↗</span></a>
-          <video
-            className="proofVideo"
-            controls
-            preload="metadata"
-            playsInline
-            src={walkthroughUrl}
-            style={{ width: "100%", marginTop: "18px", borderRadius: "14px", display: "block" }}
-          />
-        </article>
       </section>
     </main>
   );
