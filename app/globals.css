@@ -190,7 +190,7 @@ body {
 
 
 /* ─────────────────────────────────────────────────────────────
-   v3 — Yousef product language
+   v3: Yousef product language
    Shared visual DNA with Seen It, IQD Market Tracker and portfolio:
    cool off-white ground, white soft cards, sky-blue accent,
    restrained borders, rounded surfaces, compact controls and
@@ -866,7 +866,7 @@ pre {
 
 
 /* ─────────────────────────────────────────────────────────────
-   v4 — minimal product UI
+   v4: minimal product UI
    Requested direction: less copy, stronger hierarchy, compact
    controls, floating auto-hiding header, progressive disclosure.
    ───────────────────────────────────────────────────────────── */
@@ -1679,7 +1679,7 @@ pre {
 
 
 /* ─────────────────────────────────────────────────────────────
-   v5 — full-bleed header + integrated hero + new proof/source UI
+   v5: full-bleed header, integrated hero, proof/source UI
    ───────────────────────────────────────────────────────────── */
 
 .minimalShell .floatingHeader,
@@ -2058,7 +2058,7 @@ pre {
   line-height: 1.55;
 }
 
-/* Technical article styling — same system, calmer density */
+/* Technical article styling. Same system, calmer density. */
 .articleBodyV2 {
   max-width: 900px;
   gap: 12px;
@@ -2199,7 +2199,7 @@ pre {
 
 
 /* ─────────────────────────────────────────────────────────────
-   v6 — profile-inspired chrome, quieter hero, evidence-first pages
+   v6: profile-inspired chrome, quieter hero, simpler pages
    ───────────────────────────────────────────────────────────── */
 
 .minimalShell,
@@ -2686,7 +2686,7 @@ pre {
 
 
 /* ─────────────────────────────────────────────────────────────
-   v7 — recruiter walkthrough page
+   v7: walkthrough page
    Same approved visual language as the final product UI.
    ───────────────────────────────────────────────────────────── */
 
