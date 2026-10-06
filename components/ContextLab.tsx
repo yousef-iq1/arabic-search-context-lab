@@ -211,10 +211,10 @@ export function ContextLab() {
           </p>
           <div className="heroPrimaryActions">
             <Link className="roleProofCta" href="/proof">
-              {isAr ? "ليش أنا مناسب للدور" : "Why I’m a fit"}
+              {isAr ? "ليش بنيته" : "Why I built this"}
             </Link>
             <Link className="sourceTextLink" href="/source">
-              {isAr ? "كيف بنيته" : "How it’s built"}
+              {isAr ? "كيف بنيته" : "How I built it"}
             </Link>
             <Link className="sourceTextLink walkthroughTextLink" href="/walkthrough">
               {isAr ? "شاهد الفيديو" : "Watch walkthrough"}
