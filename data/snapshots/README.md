@@ -1,30 +1,41 @@
-# Snapshot data
+# Saved SerpApi results
 
-The public demo is intended to run from clearly labeled, real SerpApi captures so it does not burn through a free-tier API quota.
+The public demo uses saved SerpApi results so opening the site does not spend a live API request every time.
 
-Snapshot files are written as:
+Files live here:
 
-```
+```text
 data/snapshots/<query-id>/<market-id>.json
 ```
 
-Each file contains the normalized `MarketSearchResult` shape from `lib/types.ts` and must be captured from a real search. Do not fabricate results. A snapshot should keep its original `capturedAt` timestamp and is displayed as `snapshot` mode in the UI.
+Each file uses the `MarketSearchResult` shape from `lib/types.ts`.
 
-Live mode is enabled only when the server environment includes both:
+A saved result must come from a real SerpApi response. Keep its original `capturedAt` value. Do not add made-up search results.
 
-```
+## Live mode
+
+Live mode needs both values on the server:
+
+```env
 SERPAPI_LIVE_MODE=true
 SERPAPI_KEY=<private key>
 ```
 
-The key is never committed or sent to the browser.
+The key is not committed to the repo and is not sent to the browser.
 
-## Controlled capture workflow
+## Capturing new saved results
 
-The repository includes `scripts/capture-snapshots.mjs`. It is disabled by default.
+The repo includes `scripts/capture-snapshots.mjs`. It is off by default.
 
-For a one-time trusted capture, set `SERPAPI_CAPTURE_ON_BUILD=true` alongside the private server-side `SERPAPI_KEY`. The controlled capture step can submit one or more curated Arabic query presets for Baghdad, Riyadh, Cairo, and Casablanca, waits for Search Archive completion, normalizes the responses, and prints each snapshot between explicit log markers. `SERPAPI_CAPTURE_QUERY_IDS` and `SERPAPI_CAPTURE_MARKETS` can narrow a trusted capture run. The API key is never printed.
+For a controlled capture:
 
-After the normalized log output is reviewed and committed here, return `SERPAPI_CAPTURE_ON_BUILD` to `false`.
+1. Set `SERPAPI_CAPTURE_ON_BUILD=true`.
+2. Keep `SERPAPI_KEY` in the server environment.
+3. Use `SERPAPI_CAPTURE_QUERY_IDS` or `SERPAPI_CAPTURE_MARKETS` if you only need part of the matrix.
+4. Review the captured output.
+5. Commit the saved JSON files.
+6. Set `SERPAPI_CAPTURE_ON_BUILD=false` again.
 
-This is intentionally a maintainer-only capture workflow instead of a public endpoint, so public visitors cannot consume the account quota.
+The capture script does not print the API key.
+
+I keep this as a build-time/admin workflow instead of exposing a public capture button, because public visitors should not be able to spend the API quota.
