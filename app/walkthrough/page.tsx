@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Arabic Technical Walkthrough | Arabic Search Context Lab",
+  description:
+    "A 1:29 Arabic walkthrough of the SerpApi-powered search-context demo, localization choices, and engineering decisions.",
+  openGraph: {
+    title: "Arabic Technical Walkthrough",
+    description:
+      "A short Arabic walkthrough of the product, localization choices, and engineering decisions behind Arabic Search Context Lab.",
+    images: ["https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster"],
+  },
+};
 
 const VIDEO_URL = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough";
 const POSTER_URL = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster";
