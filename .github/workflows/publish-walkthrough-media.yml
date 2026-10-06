@@ -24,7 +24,8 @@ jobs:
           curl --fail --location --retry 3 --output public/walkthrough-poster.jpg "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough-poster"
           test -s public/walkthrough.mp4
           test -s public/walkthrough-poster.jpg
-          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 public/walkthrough.mp4
+          file public/walkthrough.mp4
+          file public/walkthrough-poster.jpg
 
       - name: Commit media into the site
         run: |
