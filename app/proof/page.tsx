@@ -3,6 +3,7 @@ import Link from "next/link";
 const walkthroughUrl = "https://trading-v.hoaster.page/yousef-serpapi-arabic-walkthrough";
 
 const items = [
+  { title: "Arabic technical walkthrough", type: "Speaking", status: "Recorded · 1:29", text: "A real Arabic-voice walkthrough of the product, localization inputs, and the engineering decisions behind the demo.", href: "/walkthrough" },
   { title: "Public GitHub repository", type: "Source", status: "Public", text: "Standalone source with setup, architecture notes, real snapshots, and the server-side SerpApi integration.", href: "https://github.com/yousef-iq1/arabic-search-context-lab" },
   { title: "Public source tour", type: "Engineering", status: "Published", text: "A focused walkthrough of localization inputs, secret handling, async search, partial failure, and public snapshot design.", href: "/source" },
   { title: "Arabic documentation localization", type: "Localization", status: "Published", text: "A parameter-level Arabic sample covering location, country bias, locale, async search, caching, and output formats.", href: "/localization" },
