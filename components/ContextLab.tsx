@@ -210,7 +210,7 @@ export function ContextLab() {
               : "This demo runs the same Arabic search in Baghdad, Riyadh, Cairo, and Casablanca with SerpApi, then compares the results."}
           </p>
           <div className="heroPrimaryActions">
-            <Link className="roleWorkCta" href="/work">
+            <Link className="roleProofCta" href="/proof">
               {isAr ? "ليش أنا مناسب للدور" : "Why I’m a fit"}
               <span aria-hidden="true">↗</span>
             </Link>
